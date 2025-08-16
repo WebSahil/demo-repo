@@ -287,7 +287,7 @@ const ContactUs = () => {
                                                 {doctor.worksAt}
                                             </span>
                                         </p>
-                                         <div className="flex items-center  gap-2 pt-2">
+                                        <div className="flex items-center  gap-2 pt-2">
                                             <span className="bg-blue-100 text-[#2b3d67] font-semibold text-sm px-2 py-1 rounded-sm shadow-sm">
                                                 {doctor.specialty}
                                             </span>
@@ -467,45 +467,45 @@ const ContactUs = () => {
                     </div>
                     <div className="hidden md:block w-full md:w-4/12 relative">
                         <div className="sticky top-4">
-                            <div className="flex flex-col border border-[#2b3d67] self-start rounded-sm bg-white text-[#2b3d67] p-6">
+                            <div className="flex flex-col border self-start rounded-sm bg-[#2b3d67] text-white p-6">
                                 <h2 className="text-2xl font-bold mb-1">Get FREE Evaluation</h2>
-                                <p className="text-sm  mb-4">Treatment plan and quote within 2 days</p>
+                                <p className="text-sm mb-4">Treatment plan and quote within 2 days</p>
 
                                 <input
                                     type="text"
                                     placeholder="Patient Name"
-                                    className="mb-3 px-4 py-2 rounded-sm border border-[#2b3d67] text-black outline-none focus:border-[#2b3d67]"
+                                    className="mb-3 px-4 py-1.5 rounded text-black"
                                 />
 
-                                <select className="mb-3 px-4 py-2 rounded-sm border border-[#2b3d67] text-black outline-none focus:border-[#2b3d67]">
+                                <select className="mb-3 px-4 py-1.5 rounded text-black">
                                     <option>India</option>
                                 </select>
 
-                                <select className="mb-3 px-4 py-2 rounded-sm border border-[#2b3d67] text-black outline-none focus:border-[#2b3d67]">
+                                <select className="mb-3 px-4 py-1.5 rounded text-black">
                                     <option>Select City</option>
                                 </select>
 
                                 <div className="flex mb-3">
-                                    <span className="bg-gray-200 text-black px-3 py-2 rounded-sm border border-r-0 border-[#2b3d67]">+91</span>
+                                    <span className="bg-gray-200 text-black px-3 py-1.5 rounded-l">+91</span>
                                     <input
                                         type="tel"
                                         placeholder="Enter Phone no."
-                                        className="flex-1 px-4 py-2 rounded-sm border border-l-0 border-[#2b3d67] text-black outline-none focus:border-[#2b3d67]"
+                                        className="flex-1 px-4 py-1.5 rounded-r text-black"
                                     />
                                 </div>
 
                                 <textarea
                                     placeholder="Describe The Current Medical Problem."
-                                    className="mb-3 px-4 py-2 rounded-sm border border-[#2b3d67] text-black outline-none focus:border-[#2b3d67]"
+                                    className="mb-3 px-4 py-1.5 rounded text-black"
                                 ></textarea>
 
                                 <input
                                     type="text"
                                     placeholder="Example: 30 Yrs or 29-05-1985"
-                                    className="mb-4 px-4 py-2 rounded-sm border border-[#2b3d67] text-black outline-none focus:border-[#2b3d67]"
+                                    className="mb-4 px-4 py-1.5 rounded text-black"
                                 />
 
-                                <button className="bg-[#17b2aa] font-semibold text-white px-4 py-2 rounded-sm w-full">
+                                <button className="bg-[#17b2aa] font-semibold text-white px-4 py-1.5 rounded w-full">
                                     Contact Us Now
                                 </button>
 
@@ -518,7 +518,6 @@ const ContactUs = () => {
                                 </p>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
