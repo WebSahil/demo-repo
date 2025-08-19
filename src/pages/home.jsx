@@ -11,13 +11,75 @@ import cardiac from "../assets/cardiac.svg"
 import ent from "../assets/ent.svg"
 import costest from "../assets/costest.webp"
 import clientimg from "../assets/clientimg.jpg"
+import vector2 from "../assets/vector2.png"
+import BariatricSurgery from "../assets/BariatricSurgery.jpg"
+import CardiacSciences from "../assets/CardiacSciences.jpg"
+import ENT from "../assets/ENT.jpg"
+import GeneralandLaparoscopic from "../assets/GeneralandLaparoscopic.jpg"
+import GeneralMedicine from "../assets/GeneralMedicine.jpg"
+import HaematologyBMT from "../assets/Haematology&BMT.jpg"
+import Hepatology from "../assets/Hepatology.jpg"
+import InfectiousDisease from "../assets/InfectiousDisease.jpg"
+import Infertility from "../assets/Infertility.jpg"
+import NephrologyUrology from "../assets/NephrologyUrology.jpg"
 const Home = () => {
+
+    const testimonials = [
+        {
+            title: "Liver Transplant in India",
+            thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            description: "Life-saving liver transplant performed by expert Indian surgeons."
+        },
+        {
+            title: "Bone Marrow Transplant in India",
+            thumbnail: "https://img.youtube.com/vi/3JZ_D3ELwOQ/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+            description: "Advanced bone marrow transplant with high success rate in India."
+        },
+        {
+            title: "MAKO Robotic Hip Replacement",
+            thumbnail: "https://img.youtube.com/vi/oHg5SJYRHA0/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+            description: "Robotic technology ensures faster recovery and precise hip surgery."
+        },
+        {
+            title: "Kidney Transplant Surgery",
+            thumbnail: "https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=V-_O7nl0Ii0",
+            description: "Expert kidney transplant procedure with excellent patient outcomes."
+        },
+        {
+            title: "MAKO Robotic Hip Replacement",
+            thumbnail: "https://img.youtube.com/vi/oHg5SJYRHA0/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+            description: "Innovative robotic hip replacement by top orthopedic surgeons."
+        },
+        {
+            title: "Kidney Transplant Surgery",
+            thumbnail: "https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=V-_O7nl0Ii0",
+            description: "Renowned hospitals offer safe and affordable kidney transplants."
+        },
+        {
+            title: "MAKO Robotic Hip Replacement",
+            thumbnail: "https://img.youtube.com/vi/oHg5SJYRHA0/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+            description: "Experience pain-free recovery with robotic-assisted hip surgery."
+        },
+        {
+            title: "Kidney Transplant Surgery",
+            thumbnail: "https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg",
+            url: "https://www.youtube.com/watch?v=V-_O7nl0Ii0",
+            description: "Trusted kidney transplant specialists with global patient success."
+        }
+    ];
 
 
     return (
         <>
-            <header className="w-full sticky top-0 z-10 shadow-lg  bg-gray-100  text-white">
-                <div className="w-full  text-[#2b3d67] bg-gray-100 font-semibold text-sm py-1.5 px-4 flex justify-end gap-10 items-center">
+            <header className="w-full sticky bg-opacity-60 backdrop-blur-lg top-0 z-10 shadow-lg  bg-gray-100  text-white">
+                <div className="w-full  text-[#2b3d67]  font-semibold text-sm py-1 px-4 flex justify-end gap-10 items-center">
                     {/* <p>Call us: +91-1234567890</p>
                     <p>Email: support@yourdomain.com</p> */}
                 </div>
@@ -45,7 +107,7 @@ const Home = () => {
                 </div>
 
 
-                <div className="bg-gray-100 w-full">
+                <div className=" w-full">
                     <div className="max-w-7xl mx-auto flex gap-6 px-4 py-5     text-[#2b3d67] font-semibold text-sm overflow-x-auto">
                         <a href="#" className="hover:underline">Treatment</a>
                         <a href="#" className="hover:underline">Hospitals</a>
@@ -232,374 +294,552 @@ const Home = () => {
             <h1 className='flex justify-center items-center text-2xl font-semibold'>Medical Treatement</h1>
             <div className='flex justify-center flex-row gap-3 items-center p-8'>
 
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={laparoscopic}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={ent}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={cardiac}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={laparoscopic}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={ent}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
             </div>
             <div className='flex justify-center flex-row gap-3 items-center px-8'>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={laparoscopic}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={ent}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={cardiac}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={laparoscopic}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
-                    </p>
+
                 </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-8 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white flex flex-col rounded-2xl shadow-lg p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={ent}
                         alt="Bariatric Surgery"
                         className="mx-auto mb-4 h-16 w-16"
                     />
                     <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-                    <p className="mt-1 text-sm text-gray-400  font-semibold">
-                        Advanced cancer treatments with proven results.
+
+                </div>
+            </div>
+            <div className='flex p-12'>
+                <div className='flex flex-col rounded-xl shadow-lg  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
+                    <h2 className="text-center  text-3xl text-gray-600 font-bold  mb-2  ">
+                        Our Services Cover Every Need
+                    </h2>
+                    <h2 className="text-center  text-gray-600  mb-6   ">
+                        We understand that traveling to a foreign country for medical treatment can be overwhelming
+                    </h2>
+                    <div className='flex pt-5 w-full gap-3'>
+                        <div className=' w-5/12 '>
+                            <img src={clientimg} alt="Client" className='w-full rounded-lg object-cover h-[27rem]  shadow-md' />
+                        </div>
+                        <div className='flex w-8/12 flex-row gap-3 '>
+                            <div className="gap-3 flex flex-col w-full  relative">
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="gap-3 flex flex-col w-full  relative">
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
+                                        <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-gray-900 font-semibold">
+                                            Medical Opinion and Cost Estimations
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Expert opinions and cost estimates.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div className='flex justify-center pt-4 items-center'>
+                <h3 className='text-3xl font-bold text-gray-800'>Our Treatement Packages</h3>
+            </div>
+            <div className='flex flex-row justify-center gap-3 items-center px-8 py-8'>
+                <div className="bg-white rounded-2xl shadow-lg w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={BariatricSurgery}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Bariatric Surgery</h3>
+
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
                     </p>
+
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div className='flex p-12'>
-                <div className='flex flex-col rounded-xl shadow-lg  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
-                    <h2 className="text-center  text-3xl text-gray-600 font-bold  mb-2  ">
-                        Our Services Cover Every Need
-                    </h2>
-                    <h2 className="text-center  text-gray-600  mb-6   ">
-                        We understand that traveling to a foreign country for medical treatment can be overwhelming
-                    </h2>
-                    <div className='flex pt-5 w-full gap-3'>
-                       <div className=' w-5/12 '>
-                        <img src={clientimg} alt="Client" className='w-full rounded-lg object-cover h-[27rem]  shadow-md' />
-                       </div>
-                        <div className='flex w-8/12 flex-row gap-3 '>
-                        <div className="gap-3 flex flex-col w-full  relative">
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gap-3 flex flex-col w-full  relative">
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={CardiacSciences}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Cardiac Sciences</h3>
+
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={ENT}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">ENT</h3>
+
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={GeneralandLaparoscopic}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">General and Laparoscopic</h3>
+
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={GeneralMedicine}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">General Medicine</h3>
+
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
                     </div>
                 </div>
             </div>
-            <div className='flex p-12'>
-                <div className='flex flex-col rounded-xl shadow-lg  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
-                    <h2 className="text-center  text-3xl text-gray-600 font-bold  mb-2  ">
-                        Our Services Cover Every Need
+            <div className='flex justify-center items-center pb-10'>
+                <button className="px-10 py-2 text font-bold text-blue-600 bg-blue-100 rounded-full shadow-sm hover:shadow-md hover:bg-blue-200 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+
+            <div className='py-10 bg-gray-50'>
+                <div className="text-center mb-10">
+                    <h2 className="text-5xl font-bold text-gray-900">
+                        +100 Video Testimonials Available <br />
+                        On Our Website <br />
+                        <span className="text-[#2b3d67] font-normal">See Real Patient Stories!</span>
                     </h2>
-                    <h2 className="text-center  text-gray-600  mb-6   ">
-                        We understand that traveling to a foreign country for medical treatment can be overwhelming
-                    </h2>
-                    <div className='flex pt-5 w-full gap-3'>
-                       <div className='grid grid-cols-2 gap-1 w-5/12 '>
-                        <img src={clientimg} alt="Client" className='w-52 h-36 rounded-lg object-cover  shadow-md' />
-                        <img src={clientimg} alt="Client" className='w-52 h-36 rounded-lg object-cover  shadow-md' />
-                        <img src={clientimg} alt="Client" className='w-52 h-36 rounded-lg object-cover  shadow-md' />
-                        <img src={clientimg} alt="Client" className='w-52 h-36 rounded-lg object-cover  shadow-md' />
-                        <img src={clientimg} alt="Client" className='w-52 h-36 rounded-lg object-cover  shadow-md' />
-                        <img src={clientimg} alt="Client" className='w-52 h-36 rounded-lg object-cover  shadow-md' />
-                       </div>
-                        <div className='flex w-8/12 flex-row gap-3 '>
-                        <div className="gap-3 flex flex-col w-full  relative">
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
+                    {testimonials.map((video, index) => (
+                        <a
+                            key={index}
+                            href={video.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow block"
+                        >
+                            <div className="relative">
+                                <img
+                                    src={video.thumbnail}
+                                    alt={video.title}
+                                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-50 transition">
+                                    <svg
+                                        className="w-12 h-12 text-red-500"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
+
+                            {/* Title below the image */}
+                            <div className="w-full text-sm font-medium px-3 py-2 text-center">
+                                {video.title}
+                                <p className="text-xs font-normal text-gray-600 mt-1">{video.description}</p>
                             </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
+
+                        </a>
+                    ))}
+                </div>
+            </div>
+            {/* Testimonial Section */}
+            <section className="pb-16 pt-5 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+                    {/* Testimonials Grid */}
+                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                        {/* Testimonial 1 */}
+                        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <p className="text-gray-700 italic">
+                                "Couriero made my shipments hassle-free. Quick service and great support!"
+                            </p>
+                            <div className="mt-4 flex items-center gap-3">
+                                <img
+                                    src="https://i.pravatar.cc/100?img=1"
+                                    alt="Client"
+                                    className="w-12 h-12 rounded-full"
+                                />
                                 <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
+                                    <h4 className="font-semibold text-gray-900">Amit Sharma</h4>
+                                    <p className="text-sm text-gray-500">Business Owner</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="gap-3 flex flex-col w-full  relative">
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
+
+                        {/* Testimonial 2 */}
+                        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <p className="text-gray-700 italic">
+                                "The best courier aggregator. I saved money and time on every delivery."
+                            </p>
+                            <div className="mt-4 flex items-center gap-3">
+                                <img
+                                    src="https://i.pravatar.cc/100?img=2"
+                                    alt="Client"
+                                    className="w-12 h-12 rounded-full"
+                                />
                                 <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4 bg-white  bg-opacity-80 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="bg-blue-100 p-3 rounded-full flex items-center justify-center">
-                                    <img src={costest} alt="Medical Opinion" className="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 className="text-gray-900 font-semibold">
-                                        Medical Opinion and Cost Estimations
-                                    </h3>
-                                    <p className="text-gray-600 text-sm">
-                                        Expert opinions and cost estimates.
-                                    </p>
+                                    <h4 className="font-semibold text-gray-900">Priya Verma</h4>
+                                    <p className="text-sm text-gray-500">E-commerce Seller</p>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Testimonial 3 */}
+                        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <p className="text-gray-700 italic">
+                                "Very reliable and easy-to-use platform. Highly Highly recommended!"
+                            </p>
+                            <div className="mt-4 flex items-center gap-3">
+                                <img
+                                    src="https://i.pravatar.cc/100?img=3"
+                                    alt="Client"
+                                    className="w-12 h-12 rounded-full"
+                                />
+                                <div>
+                                    <h4 className="font-semibold text-gray-900">Rahul Mehta</h4>
+                                    <p className="text-sm text-gray-500">Retailer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Testimonial 4 */}
+                        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <p className="text-gray-700 italic">
+                                "Customer support was amazing. My queries were solved instantly."
+                            </p>
+                            <div className="mt-4 flex items-center gap-3">
+                                <img
+                                    src="https://i.pravatar.cc/100?img=4"
+                                    alt="Client"
+                                    className="w-12 h-12 rounded-full"
+                                />
+                                <div>
+                                    <h4 className="font-semibold text-gray-900">Neha Kapoor</h4>
+                                    <p className="text-sm text-gray-500">Startup Founder</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            {/* <div className='flex flex-row justify-center gap-3 items-center px-8 pb-8'>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={HaematologyBMT}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Haematology & BMT</h3>
+                   
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={Hepatology}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Hepatology</h3>
+                   
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={InfectiousDisease}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Infectious Disease</h3>
+                   
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={Infertility}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Infertility</h3>
+                   
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white rounded-2xl shadow-lg  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <img
+                        src={NephrologyUrology}
+                        alt="Bariatric Surgery"
+                        className="mx-auto rounded-md mb-4 w-72 h-36"
+                    />
+                    <h3 className="text-lg font-bold text-[#2b3d67]">Nephrology & Urology</h3>
+                   
+                    <p className="mt-4 text-sm text-gray-600 font-semibold">
+                        Packages Starting from{" "}
+                        <span className="block text-lg font-bold">$1500</span>
+                    </p>
+                    <div className="my-4">
+                        <button className="px-6 py-2 text-sm font-bold text-teal-600 bg-teal-100 rounded-full shadow-sm hover:shadow-md hover:bg-teal-200 transition duration-300">
+                            Talk to Expert
+                        </button>
+                    </div>
+                </div>
+            </div> */}
+
             <footer className="bg-[#052b47] text-white">
                 <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Our Company */}
