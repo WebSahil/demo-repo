@@ -1,8 +1,9 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import HospitalPage from './pages/hospital';
-import ContactUs from './pages/ContactUs'; // New Page
+import ContactUs from './pages/ContactUs'; 
 import Home from './pages/home';
+import HospitalData from './pages/hospitalData';
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/hospital" element={<HospitalPage />} />
-        <Route path="/contact" element={<ContactUs />} /> 
-        <Route path="/home" element={<Home />} /> 
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/hospitaldata" element={<HospitalData />} />
       </Routes>
     </Router>
   );
