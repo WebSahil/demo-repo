@@ -456,39 +456,44 @@ const Home = () => {
                 </div>
             </section>
 
-            <h1 className='flex justify-center items-center text-4xl font-semibold text-gray-900'>Medical Treatement</h1>
 
-            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-8">
-                {specialties.map((item, index) => (
-                    <div
-                        key={index}
-                        className="flex items-start gap-4 bg-white p-4 rounded-lg  hover:shadow-sm transition"
-                    >
-                        {/* Icon */}
-                        <img
-                            src={item.icon}
-                            alt={item.name}
-                            className="h-12 w-12 object-contain"
-                        />
+            <div className='flex flex-col  px-8'>
+                <div className='p-10 rounded-xl bg-[#e7f3f7]'>
+                    <h1 className='flex justify-center  items-center text-4xl font-bold text-gray-900'>Medical Treatement</h1>
 
-                        {/* Text */}
-                        <div className="text-left">
-                            <h3 className="font-semibold text-lg text-[#2b3d67]">{item.name}</h3>
-                            <div className="flex flex-col  text-gray-600">
-                                <a href={item.topDoctorsLink} className="text-sm">
-                                    Top Doctors
-                                </a>
+                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-8">
+                        {specialties.map((item, index) => (
+                            <div
+                                key={index}
+                                className="flex items-start gap-4 bg-white p-4 rounded-lg  hover:shadow-sm transition"
+                            >
+                                {/* Icon */}
+                                <img
+                                    src={item.icon}
+                                    alt={item.name}
+                                    className="h-12 w-12 object-contain"
+                                />
+
+                                {/* Text */}
+                                <div className="text-left">
+                                    <h3 className="font-semibold text-lg text-[#2b3d67]">{item.name}</h3>
+                                    <div className="flex flex-col  text-gray-600">
+                                        <a href={item.topDoctorsLink} className="text-sm">
+                                            Top Doctors
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
-                ))}
+                </div>
             </div>
             {/* Collage */}
             <div className='flex justify-center p-10   items-center w-full h-full'>
                 <img src={collage} alt="Banner" className='w-full shadow-md rounded-md h-[400px] object-cover' />
             </div>
             <div className='flex justify-center pt-4 items-center'>
-                <h3 className='text-3xl font-bold text-gray-800'>Our Treatement Packages</h3>
+                <h3 className='text-4xl font-bold text-gray-900'>Our Treatement Packages</h3>
             </div>
             <div className='flex flex-row justify-center gap-3 items-center px-8 py-8'>
                 <div className="bg-white rounded-2xl shadow-md w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
@@ -586,14 +591,14 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center pb-10'>
-                <button className="px-10 py-2 text font-bold text-blue-600 bg-blue-100 rounded-full shadow-sm hover:shadow-md hover:bg-blue-200 transition duration-300">
+                <button className="px-10 py-2  font-bold text-[#2b3d67] bg-blue-100 rounded-full shadow-sm hover:shadow-md hover:bg-blue-200 transition duration-300">
                     View More
                 </button>
             </div>
             {/* How do we work */}
             <div className='flex px-12 py-5'>
                 <div className='flex flex-col rounded-xl shadow-md  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
-                    <h2 className="text-center  text-4xl font-bold text-gray-800 mb-6   ">
+                    <h2 className="text-center  text-4xl font-bold text-gray-900 mb-6   ">
                         How do we work?
                     </h2>
                     <div className='flex pt-5 gap-3'>
@@ -751,7 +756,7 @@ const Home = () => {
                 </div>
             </div>
 
-             <section className="pb-10 bg-gray-50">
+            <section className="pb-10 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
 
@@ -823,8 +828,8 @@ const Home = () => {
                 </div>
             </section>
 
-             {/* Popular Hospitals Section */}
-            <section className="py-12  ">
+            {/* Popular Hospitals Section */}
+            <section className="py-9  ">
 
                 <div className="flex justify-center items-center px-6 mb-10">
                     <h2 className="text-4xl  font-bold text-gray-900">Popular Hospitals</h2>
@@ -858,60 +863,13 @@ const Home = () => {
                 </div>
 
             </section>
-            
 
-            {/* <div className='flex justify-center flex-row gap-3 items-center px-8'>
-                <div className="bg-white flex flex-col rounded-2xl shadow-md p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img
-                        src={laparoscopic}
-                        alt="Bariatric Surgery"
-                        className="mx-auto mb-4 h-16 w-16"
-                    />
-                    <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
 
-                </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-md p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img
-                        src={ent}
-                        alt="Bariatric Surgery"
-                        className="mx-auto mb-4 h-16 w-16"
-                    />
-                    <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-
-                </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-md p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img
-                        src={cardiac}
-                        alt="Bariatric Surgery"
-                        className="mx-auto mb-4 h-16 w-16"
-                    />
-                    <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-
-                </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-md p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img
-                        src={laparoscopic}
-                        alt="Bariatric Surgery"
-                        className="mx-auto mb-4 h-16 w-16"
-                    />
-                    <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-
-                </div>
-                <div className="bg-white flex flex-col rounded-2xl shadow-md p-6 w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img
-                        src={ent}
-                        alt="Bariatric Surgery"
-                        className="mx-auto mb-4 h-16 w-16"
-                    />
-                    <h3 className="font-semibold text-gray-900">Bariatric Surgery</h3>
-
-                </div>
-            </div> */}
 
             {/* Our Services Cover Every Need */}
             <div className='flex px-12 pb-8'>
                 <div className='flex flex-col rounded-xl shadow-md  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
-                    <h2 className="text-center  text-3xl text-gray-600 font-bold  mb-2  ">
+                    <h2 className="text-center  text-4xl font-bold text-gray-900  mb-2  ">
                         Our Services Cover Every Need
                     </h2>
                     <h2 className="text-center  text-gray-600  mb-6   ">
@@ -1040,18 +998,18 @@ const Home = () => {
 
 
 
-            
 
 
-            
-
-           
 
 
-           
 
 
-           
+
+
+
+
+
+
 
             {/* Popular Doctors */}
             <section className="py-12 bg-[#e7f3f7]">
@@ -1116,7 +1074,7 @@ const Home = () => {
             </section>
 
 
-    <div className="flex flex-col bg-gradient-to-r from-10% to-100% from-blue-200 to-[#e7f3f7] border   shadow-lg   ">
+            <div className="flex flex-col bg-gradient-to-r from-10% to-100% from-blue-200 to-[#e7f3f7] border   shadow-lg   ">
                 <div className="flex justify-center py-11 gap-5 flex-col items-center">
                     <h3 className="flex lg:text-4xl md:text-4xl text-xl  font-bold">Get Consultation  for Free</h3>
                     <h3 className="flex text-center font-semibold  text-sm">Get the Best Treatment With Exceptional Love & Care
@@ -1126,11 +1084,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            
+
             <section className="py-12 bg-gray-50">
 
                 <div className="flex justify-center items-center px-6 mb-10">
-                    <h2 className="text-4xl font-bold text-gray-700">Latest Health Blogs</h2>
+                    <h2 className="text-4xl font-bold text-gray-900">Latest Health Blogs</h2>
                 </div>
 
                 <div className="relative">
