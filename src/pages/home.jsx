@@ -369,61 +369,81 @@ const Home = () => {
                     </div>
                 </div>
             </header>
-            <div
-                className="flex px-10 py-3 ">
-                <div className="absolute inset-0 bg-white/50 h-[673px] backdrop-blur-sm"></div>
+            <div className="flex px-10 py-3 bg-[#2b3d67] relative">
+                {/* blur layer not needed since solid bg, but kept optional */}
+        
 
-                <div className='flex relative py-16  flex-row  w-full'>
-                    <div className="flex flex-col w-full md:w-7/12 px-4 py-2 ">
-
-                        <div className=" ">
-                            <h1 className="text-gray-900 text-5xl font-bold leading-tight">
+                <div className="flex relative py-16 flex-row w-full">
+                    {/* LEFT TEXT SECTION */}
+                    <div className="flex flex-col w-full md:w-7/12 px-4 py-2 text-white">
+                        <div>
+                            <h1 className="text-5xl font-bold leading-tight">
                                 Don't Suffer
                             </h1>
-                            <h2 className="text-gray-900 text-[2.6rem] leading-tight font-semibold">
+                            <h2 className="text-[2.6rem] leading-tight font-semibold">
                                 Get the Best Treatment With
                             </h2>
-                            <h2 className="text-[#2b3d67] text-[2.6rem] leading-tight font-bold">
+                            <h2 className="text-yellow-300 text-[2.6rem] leading-tight font-bold">
                                 Exceptional Love & Care
                             </h2>
-                            <div className="w-28 h-1 bg-[#2b3d67] drop-shadow-md rounded mt-1"></div>
+                            <div className="w-28 h-1 bg-yellow-300 drop-shadow-md rounded mt-1"></div>
                         </div>
 
-                        <div className="mt-5  p-2 rounded-xl ">
-                            <div className="flex gap-14 divide-x divide-gray-300">
-                                <div className="flex  flex-col">
-                                    <h3 className="text-3xl font-bold text-gray-800">1000<span className="text-xl font-normal">+</span></h3>
-                                    <p className="text-sm font-medium text-gray-600 mt-1">Happy Patients</p>
+                        {/* STATS */}
+                        <div className="mt-5 p-2 rounded-xl">
+                            <div className="flex gap-14 divide-x divide-gray-400/50">
+                                <div className="flex flex-col">
+                                    <h3 className="text-3xl font-bold text-white">
+                                        1000<span className="text-xl font-normal">+</span>
+                                    </h3>
+                                    <p className="text-sm font-medium text-gray-200 mt-1">
+                                        Happy Patients
+                                    </p>
                                 </div>
                                 <div className="flex flex-col pl-12">
-                                    <h3 className="text-3xl font-bold text-gray-800">50<span className="text-xl font-normal">+</span></h3>
-                                    <p className="text-sm font-medium text-gray-600 mt-1">Diseases</p>
+                                    <h3 className="text-3xl font-bold text-white">
+                                        50<span className="text-xl font-normal">+</span>
+                                    </h3>
+                                    <p className="text-sm font-medium text-gray-200 mt-1">
+                                        Diseases
+                                    </p>
                                 </div>
                                 <div className="flex flex-col pl-12">
-                                    <h3 className="text-3xl font-bold text-gray-800">100<span className="text-xl font-normal">%</span></h3>
-                                    <p className="text-sm font-medium text-gray-600 mt-1">Satisfaction</p>
+                                    <h3 className="text-3xl font-bold text-white">
+                                        100<span className="text-xl font-normal">%</span>
+                                    </h3>
+                                    <p className="text-sm font-medium text-gray-200 mt-1">
+                                        Satisfaction
+                                    </p>
                                 </div>
                             </div>
-                            <p className=" text-base mt-6 font-semibold text-gray-800">
+                            <p className="text-base mt-6 font-semibold text-gray-100">
                                 World's Most Trusted Medical Travel Assistance Platform
                             </p>
                         </div>
 
+                        {/* BUTTONS */}
                         <div className="mt-6 flex flex-wrap gap-4">
-                            <button className="bg-[#2b3d67] hover:bg-[#1f2c4a] transition text-white px-6 py-1 rounded-lg font-medium shadow-md">
+                            <button className="bg-white text-[#2b3d67] hover:bg-gray-200 transition px-6 py-1 rounded-lg font-medium shadow-md">
                                 Learn More
                             </button>
-                            <button className="border border-[#2b3d67] text-[#2b3d67] hover:bg-[#2b3d67] hover:text-white transition px-6 py-1.5 rounded-lg font-medium shadow-md">
+                            <button className="border border-white text-white hover:bg-white hover:text-[#2b3d67] transition px-6 py-1.5 rounded-lg font-medium shadow-md">
                                 Plan Your Treatment
                             </button>
                         </div>
                     </div>
 
-                    <div className="w-full pt-6 md:w-6/12 ">
-                        <img src={screenshot} alt="patient" className='w-full h-[350px] object-cover rounded-md shadow-md' />
+                    {/* RIGHT IMAGE */}
+                    <div className="w-full pt-6 md:w-6/12">
+                        <img
+                            src={screenshot}
+                            alt="patient"
+                            className="w-full h-[350px] object-cover rounded-md shadow-md"
+                        />
                     </div>
                 </div>
             </div>
+
 
             <section className="text-center py-10">
                 <h2 className="text-4xl font-bold text-gray-900">
@@ -742,9 +762,8 @@ const Home = () => {
                             </div>
 
                             {/* Title below the image */}
-                            <div className="w-full text-sm font-medium px-3 py-2 text-center">
+                            <div className="w-full text-lg font-semibold px-3 py-2 text-center">
                                 {video.title}
-                                <p className="text-xs font-normal text-gray-600 mt-1">{video.description}</p>
                             </div>
 
                         </a>
@@ -997,11 +1016,11 @@ const Home = () => {
                 </div>
 
                 {/* Doctors Grid */}
-                <div className="flex space-x-2 overflow-x-scroll px-6 pb-12 scrollbar-hide">
+                <div className="flex space-x-3 overflow-x-auto p-6 scrollbar-hide ">
                     {doctors.map((doc, i) => (
                         <div
                             key={i}
-                            className="min-w-[280px] bg-white  rounded-md shadow-sm hover:shadow-md transition overflow-hidden"
+                            className="min-w-[300px]  rounded-xl shadow-md  overflow-hidden cursor-pointer"
                         >
                             {/* Image */}
                             <div className="relative">
