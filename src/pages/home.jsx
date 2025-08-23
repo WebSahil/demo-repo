@@ -26,6 +26,8 @@ import blog2 from '../assets/blog2.webp'
 import indiaFlag from '../assets/india-flag.webp'
 import blog3 from '../assets/blog3.webp'
 import mexicoFlag from '../assets/mexico.webp'
+import mexico1 from '../assets/mexico1.webp'
+import tajmahal from '../assets/taj-mahal.webp'
 import banner from '../assets/banner.jpg'
 import { FaStar, FaRegStar, FaLock } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
@@ -336,7 +338,7 @@ const Home = () => {
                 </div>
                 <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3">
                     <div className="flex flex-1  items-center gap-4">
-                        <img src={logo} alt="Logo" className="h-8 w-auto" />
+                        <img src={logo} alt="Logo" className=" w-44" />
                         <div className="flex-1  max-w-xl pl-20 w-full">
                             <input
                                 type="text"
@@ -370,11 +372,9 @@ const Home = () => {
                 </div>
             </header>
             <div className="flex px-10 py-3 bg-[#2b3d67] relative">
-                {/* blur layer not needed since solid bg, but kept optional */}
-        
 
                 <div className="flex relative py-16 flex-row w-full">
-                    {/* LEFT TEXT SECTION */}
+
                     <div className="flex flex-col w-full md:w-7/12 px-4 py-2 text-white">
                         <div>
                             <h1 className="text-5xl font-bold leading-tight">
@@ -445,37 +445,43 @@ const Home = () => {
             </div>
 
 
-            <section className="text-center py-10">
-                <h2 className="text-4xl font-bold text-gray-900">
-                    Featured <span className="text-[#17b2aa]">Destination</span>
+            <section className="text-center py-14">
+                <h2 className="text-5xl pb-4 font-bold text-gray-900">
+                    <span className='text-[2rem] font-normal '> Connect With </span> Best Medical <br />
+
+                    <span className="text-[#2b3d67] text-5xl font-bold"> Professionals & Hospitals</span>
                 </h2>
 
                 <div className="mt-8 flex justify-center gap-12 flex-wrap">
                     <div className="flex flex-col items-center">
                         <img
-                            src={indiaFlag}
+                            src={tajmahal}
                             alt="India"
-                            className="w-20 h-12 rounded-lg shadow-md object-cover"
+                            className="w-64 rounded-lg shadow-md object-contain"
                         />
-                        <p className="mt-2 text-gray-700 font-medium">India</p>
+                        <p className="mt-2 text-2xl  font-semibold">India</p>
                     </div>
 
                     {/* Mexico */}
                     <div className="flex flex-col items-center">
                         <img
-                            src={mexicoFlag}
+                            src={mexico1}
                             alt="Mexico"
-                            className="w-20 h-12 rounded-lg shadow-md object-cover"
+                            className="text-2xl w-64 object-contain rounded-lg  font-semibold"
                         />
-                        <p className="mt-2 text-gray-700 font-medium">Mexico</p>
+                        <p className="mt-2  font-medium">Mexico</p>
                     </div>
                 </div>
             </section>
 
 
-            <div className='flex flex-col  px-8'>
+            <div className='flex flex-col   px-8'>
                 <div className='p-10 rounded-xl bg-[#e7f3f7]'>
-                    <h1 className='flex justify-center  items-center text-4xl font-bold text-gray-900'>Medical Treatement</h1>
+                    <h2 className="text-5xl font-bold text-gray-900">
+                        <span className='text-[2rem] font-normal '> Solution For </span> All <br />
+
+                        <span className="text-[#2b3d67] text-5xl font-bold"> Health Concern</span>
+                    </h2>
 
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-8">
                         {specialties.map((item, index) => (
@@ -508,8 +514,11 @@ const Home = () => {
             <div className='flex justify-center p-10   items-center w-full h-full'>
                 <img src={collage} alt="Banner" className='w-full shadow-md rounded-md h-[400px] object-cover' />
             </div>
-            <div className='flex justify-center pt-4 items-center'>
-                <h3 className='text-4xl font-bold text-gray-900'>Our Treatement Packages</h3>
+            <div className='flex justify-end items-end pt-20  pr-10'>
+                <h2 className="text-5xl leading-10 text-right font-bold text-gray-900">
+                    NGO Sponsored Packages <br />
+                    <span className="text-[#2b3d67]  text-[1.4rem] font-normal"><span className='font-bold text-[1.7rem]'>Lowest Price Assurance</span> without compromising Treatment Quality</span>
+                </h2>
             </div>
             <div className='flex flex-row justify-center gap-3 items-center px-8 py-8'>
                 <div className="bg-white rounded-2xl shadow-md w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
@@ -614,9 +623,12 @@ const Home = () => {
             {/* How do we work */}
             <div className='flex px-12 py-5'>
                 <div className='flex flex-col rounded-xl shadow-md  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
-                    <h2 className="text-center  text-4xl font-bold text-gray-900 mb-6   ">
-                        How do we work?
-                    </h2>
+                    <div className='flex justify-center items-center pt-5'>
+                        <h2 className="text-5xl pb-9 leading-10 text-center font-bold text-gray-900">
+                            How to Start ?<br />
+                            <span className="text-[2.2rem] leading-8 text-center font-normal text-gray-900">We are Here to Help you </span>
+                        </h2>
+                    </div>
                     <div className='flex pt-5 gap-3'>
                         <div className="flex flex-col gap-10  w-full md:w-8/12 mx-auto  rounded-sm">
                             <h3 className='flex px-14  text-xl  font-bold text-gray-600'>
@@ -728,7 +740,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='py-10 bg-gray-50'>
-                <div className="text-center mb-10">
+                <div className="text-center mb-10 mt-7">
                     <h2 className="text-5xl font-bold text-gray-900">
                         100+ Testimonials Available <br />
 
@@ -846,15 +858,12 @@ const Home = () => {
             {/* Popular Hospitals Section */}
             <section className="py-9  ">
 
-                <div className="flex justify-center items-center px-6 mb-10">
-                    <h2 className="text-4xl  font-bold text-gray-900">Popular Hospitals</h2>
-                    {/* <a
-                        href="#"
-                        className="text-teal-600 font-semibold hover:underline text-sm"
-                    >
-                        View All →
-                    </a> */}
-                </div>
+                <div className='flex justify-start items-center pt-5'>
+                        <h2 className="text-[2rem] pb-9 leading-10  text-left pl-7 font-normal text-gray-900">
+                            Connect with<br />
+                            <span className="text-5xl  text-center font-bold text-gray-900">Best Hospitals</span>
+                        </h2>
+                    </div>
 
                 <div className="flex space-x-2 pb-10 overflow-x-scroll px-6 scrollbar-hide">
                     {hospitals.map((hospital, index) => (
@@ -884,11 +893,11 @@ const Home = () => {
             {/* Our Services Cover Every Need */}
             <div className='flex px-12 pb-8'>
                 <div className='flex flex-col rounded-xl shadow-md  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
-                    <h2 className="text-center  text-4xl font-bold text-gray-900  mb-2  ">
-                        Our Services Cover Every Need
+                    <h2 className="text-center  text-4xl mt-8 font-bold text-gray-900  mb-2  ">
+                        We are with you for every need 
                     </h2>
-                    <h2 className="text-center  text-gray-600  mb-6   ">
-                        We understand that traveling to a foreign country for medical treatment can be overwhelming
+                    <h2 className="text-center  text-lg font-semibold pb-8   ">
+                       Far from Home we are here with you as a second Family
                     </h2>
                     <div className='flex pt-5 w-full gap-3'>
                         <div className=' w-5/12 '>
@@ -1008,21 +1017,24 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Popular Doctors */}
+            
             <section className="py-12 ">
-                {/* Heading */}
-                <div className="flex justify-center items-center px-6 mb-10">
-                    <h2 className=" font-bold text-4xl  text-gray-900">Popular Doctors</h2>
-                </div>
+                
+                 <div className='flex justify-start items-center'>
+                        <h2 className="text-[2rem] pb-7 leading-10  text-left pl-7 font-normal text-gray-900">
+                            Connect with<br />
+                            <span className="text-5xl  text-center font-bold text-gray-900">Medical Professionals</span>
+                        </h2>
+                    </div>
 
-                {/* Doctors Grid */}
+                
                 <div className="flex space-x-3 overflow-x-auto p-6 scrollbar-hide ">
                     {doctors.map((doc, i) => (
                         <div
                             key={i}
                             className="min-w-[300px]  rounded-xl shadow-md  overflow-hidden cursor-pointer"
                         >
-                            {/* Image */}
+
                             <div className="relative">
                                 <img
                                     src={doc.image}
@@ -1084,9 +1096,12 @@ const Home = () => {
 
             <section className="py-12 bg-gray-50">
 
-                <div className="flex justify-center items-center px-6 mb-10">
-                    <h2 className="text-4xl font-bold text-gray-900">Latest Health Blogs</h2>
-                </div>
+                <div className='flex justify-center items-center pt-5'>
+                        <h2 className="text-[2rem] pb-9   text-center pl-7 font-semibold text-gray-900">
+                            Stay Tuned with us<br />
+                            <span className="text-5xl  text-center font-bold text-gray-900"> Get  Medical Information by Professionals</span>
+                        </h2>
+                    </div>
 
                 <div className="relative">
                     <div className="flex space-x-3 overflow-x-auto p-6 scrollbar-hide">
