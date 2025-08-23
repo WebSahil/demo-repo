@@ -1,5 +1,8 @@
 import logo from "../assets/logo1.png"
 import blkmax from '../assets/blkmax.jpg'
+import natarajan from '../assets/natarajan.webp'
+import pradeep from '../assets/pradeep.webp'
+import suraj from '../assets/surag.webp'
 
 function HospitalData() {
     return (
@@ -39,19 +42,16 @@ function HospitalData() {
                     </div>
                 </div>
             </header>
-            <div className="flex justify-center  gap-3 w-full">
+            <div className="flex justify-center   w-full">
                 <div className="flex w-8/12 flex-col p-6">
                     <div className="w-full px-6 py-6">
-
+                        {/* Title */}
                         <div className="border-b border-gray-300 pb-4 mb-6">
-                            <h1 className="text-3xl font-bold text-[#2b3d67]">
-                                Apollo Hospitals, New Delhi
-                            </h1>
+                            <h1 className="text-3xl font-bold text-[#2b3d67]">Apollo Hospitals, New Delhi</h1>
                             <p className="text-gray-600 mt-2 text-sm">
                                 ⭐ 4.8/5 • Multi-speciality • Established in 1983
                             </p>
                         </div>
-
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <img
                                 src={blkmax}
@@ -65,61 +65,120 @@ function HospitalData() {
                             />
                         </div>
 
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">
-                                About the Hospital
-                            </h2>
-                            <p className="text-gray-700 leading-relaxed text-sm">
-                                Apollo Hospitals, New Delhi is one of the most trusted
-                                healthcare providers in India, offering world-class medical
-                                facilities with state-of-the-art infrastructure. The
-                                hospital is recognized globally for its excellence in
-                                patient care, advanced technology, and highly skilled
-                                doctors.
+                        {/* Overview */}
+                        <section id="overview" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Overview</h2>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                                Apollo Hospitals, New Delhi is a world-renowned healthcare institution offering
+                                state-of-the-art medical services. With over 700 beds and advanced medical technology,
+                                Apollo is one of India’s most trusted names in healthcare.
                             </p>
-                            <p className="text-gray-700 leading-relaxed text-sm mt-3">
-                                With over 700 beds, Apollo provides a wide range of medical
-                                services including cardiology, oncology, neurology,
-                                orthopedics, and organ transplantation. The hospital also
-                                offers 24/7 emergency care and international patient
-                                services, ensuring complete support from consultation to
-                                recovery.
+                            <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                                The hospital provides comprehensive medical services, ranging from preventive health
+                                checkups to complex surgeries. It is accredited by JCI and NABH for quality standards.
                             </p>
-                        </div>
+                        </section>
 
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">
-                                Key Specialties
-                            </h2>
+                        {/* Procedures */}
+                        <section id="procedures" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Procedures Offered</h2>
                             <ul className="list-disc list-inside text-gray-700 text-sm leading-relaxed">
-                                <li>Cardiology & Cardiac Surgery</li>
-                                <li>Oncology (Cancer Care)</li>
-                                <li>Neurology & Neurosurgery</li>
-                                <li>Orthopedics & Joint Replacement</li>
-                                <li>Organ Transplantation</li>
+                                <li>Cardiac Bypass Surgery</li>
+                                <li>Knee & Hip Replacement</li>
+                                <li>Liver & Kidney Transplant</li>
+                                <li>Oncology Treatments (Chemotherapy, Radiation, Surgery)</li>
+                                <li>Neurological Surgeries</li>
                             </ul>
-                        </div>
+                        </section>
 
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">
-                                Facilities for International Patients
-                            </h2>
+                        {/* Doctors */}
+                        <section id="doctors" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Our Doctors</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                                <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                                    <img
+                                        src={natarajan}
+                                        alt="Dr. Ramesh Gupta"
+                                        className="w-28 h-28 rounded-full object-cover mb-3"
+                                    />
+                                    <h3 className="font-bold text-gray-800">Dr. Ramesh Gupta</h3>
+                                    <p className="text-sm text-gray-600">Senior Cardiologist, 20+ yrs exp.</p>
+                                          <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+        Book Appointment
+      </button>
+
+                                </div>
+
+                                <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                                    <img
+                                        src={suraj}
+                                        alt="Dr. Anita Sharma"
+                                        className="w-28 h-28 rounded-full object-cover mb-3"
+                                    />
+                                    <h3 className="font-bold text-gray-800">Dr. Anita Sharma</h3>
+                                    <p className="text-sm text-gray-600">Oncologist, 15+ yrs exp.</p>
+                                </div>
+
+                                <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                                    <img
+                                        src={pradeep}
+                                        alt="Dr. Vikram Singh"
+                                        className="w-28 h-28 rounded-full object-cover mb-3"
+                                    />
+                                    <h3 className="font-bold text-gray-800">Dr. Vikram Singh</h3>
+                                    <p className="text-sm text-gray-600">Orthopedic Surgeon, 18+ yrs exp.</p>
+                                </div>
+
+                            </div>
+                        </section>
+
+
+                        {/* Facilities */}
+                        <section id="facilities" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Facilities</h2>
                             <ul className="list-disc list-inside text-gray-700 text-sm leading-relaxed">
-                                <li>Airport Pick-up & Travel Assistance</li>
-                                <li>Dedicated International Patient Lounge</li>
-                                <li>Visa & Accommodation Support</li>
-                                <li>Multi-lingual Translators</li>
-                                <li>Customized Treatment Packages</li>
+                                <li>24/7 Emergency & Ambulance Services</li>
+                                <li>International Patient Lounge & Translators</li>
+                                <li>Airport Pickup & Accommodation Assistance</li>
+                                <li>Pharmacy, Cafeteria & WiFi-enabled rooms</li>
                             </ul>
-                        </div>
+                        </section>
 
+                        {/* Reviews */}
+                        <section id="reviews" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Patient Reviews</h2>
+                            <div className="space-y-4">
+                                <div className="p-4 bg-gray-100 rounded-lg shadow-sm">
+                                    <p className="text-sm text-gray-700">
+                                        “The doctors and staff were very professional. My father underwent bypass surgery,
+                                        and the recovery was smooth.” – <span className="font-semibold">Rahul, India</span>
+                                    </p>
+                                </div>
+                                <div className="p-4 bg-gray-100 rounded-lg shadow-sm">
+                                    <p className="text-sm text-gray-700">
+                                        “Apollo made my medical journey stress-free. They handled everything from visa
+                                        to treatment.” – <span className="font-semibold">Carlos, Mexico</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Gallery */}
+                        <section id="gallery" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Gallery</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <img src={blkmax} alt="Hospital Front" className="rounded-lg shadow-md" />
+                                <img src={blkmax} alt="Hospital Interior" className="rounded-lg shadow-md" />
+                            </div>
+                        </section>
+
+                        {/* CTA */}
                         <div className="bg-[#2b3d67] text-white p-6 rounded-md shadow-md">
-                            <h3 className="text-xl font-semibold mb-2">
-                                Need Help Planning Your Treatment?
-                            </h3>
+                            <h3 className="text-xl font-semibold mb-2">Need Help Planning Your Treatment?</h3>
                             <p className="text-sm mb-4">
-                                Get a free consultation with our experts and receive a
-                                customized treatment plan within 48 hours.
+                                Get a free consultation with our experts and receive a customized treatment plan within 48 hours.
                             </p>
                             <button className="bg-[#17b2aa] hover:bg-[#139a94] px-6 py-2 rounded-md font-semibold transition">
                                 Contact Us Now
@@ -127,7 +186,7 @@ function HospitalData() {
                         </div>
                     </div>
                 </div>
-                <div className=" w-full p-4 md:w-4/12 ">
+                <div className=" w-full py-4 pr-4 md:w-4/12 ">
                     <div className="sticky top-36">
                         <div className="flex flex-col border self-start rounded-sm bg-[#2b3d67] text-white p-6">
                             <h2 className="text-2xl font-bold mb-1">Get FREE Evaluation</h2>

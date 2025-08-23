@@ -40,50 +40,50 @@ const Home = () => {
     const testimonials = [
         {
             title: "Liver Transplant in India",
-            thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            thumbnail: "https://img.youtube.com/vi/yAE4koYwrc0/hqdefault.jpg",
+            url: "https://youtu.be/yAE4koYwrc0?si=NjSz3MnZiX_vdHy3",
             description: "Life-saving liver transplant performed by expert Indian surgeons."
         },
         {
             title: "Bone Marrow Transplant in India",
-            thumbnail: "https://img.youtube.com/vi/3JZ_D3ELwOQ/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+            thumbnail: "https://img.youtube.com/vi/EupN-19V9dM/hqdefault.jpg",
+            url: "https://youtu.be/EupN-19V9dM?si=rF6-DEyege46XnPO",
             description: "Advanced bone marrow transplant with high success rate in India."
         },
         {
             title: "MAKO Robotic Hip Replacement",
-            thumbnail: "https://img.youtube.com/vi/oHg5SJYRHA0/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+            thumbnail: "https://img.youtube.com/vi/RQ0u9P6D7uE/hqdefault.jpg",
+            url: "https://youtu.be/RQ0u9P6D7uE?si=xm6zU-rAMwnbZDcx",
             description: "Robotic technology ensures faster recovery and precise hip surgery."
         },
         {
             title: "Kidney Transplant Surgery",
-            thumbnail: "https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=V-_O7nl0Ii0",
+            thumbnail: "https://img.youtube.com/vi/9GPZAAV1yqs/hqdefault.jpg",
+            url: "https://youtu.be/9GPZAAV1yqs?si=KgpMvE45JjNHH0cH",
             description: "Expert kidney transplant procedure with excellent patient outcomes."
         },
         {
             title: "MAKO Robotic Hip Replacement",
-            thumbnail: "https://img.youtube.com/vi/oHg5SJYRHA0/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+            thumbnail: "https://img.youtube.com/vi/Ytds2BxKtZk/hqdefault.jpg",
+            url: "https://youtu.be/Ytds2BxKtZk?si=f17DHbGXzBZmi73w",
             description: "Innovative robotic hip replacement by top orthopedic surgeons."
         },
         {
             title: "Kidney Transplant Surgery",
-            thumbnail: "https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=V-_O7nl0Ii0",
+            thumbnail: "https://img.youtube.com/vi/wcgGoushG0w/hqdefault.jpg",
+            url: "https://youtu.be/wcgGoushG0w?si=oTb7bkFyUAugL22l",
             description: "Renowned hospitals offer safe and affordable kidney transplants."
         },
         {
             title: "MAKO Robotic Hip Replacement",
-            thumbnail: "https://img.youtube.com/vi/oHg5SJYRHA0/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+            thumbnail: "https://img.youtube.com/vi/jo143IXVTYo/hqdefault.jpg",
+            url: "https://youtu.be/jo143IXVTYo?si=o5hrZGio0aKzNxEE",
             description: "Experience pain-free recovery with robotic-assisted hip surgery."
         },
         {
             title: "Kidney Transplant Surgery",
-            thumbnail: "https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg",
-            url: "https://www.youtube.com/watch?v=V-_O7nl0Ii0",
+            thumbnail: "https://img.youtube.com/vi/uwY0Qp2R8mw/hqdefault.jpg",
+            url: "https://youtu.be/uwY0Qp2R8mw?si=HJDf5zre6nBTzM_4",
             description: "Trusted kidney transplant specialists with global patient success."
         }
     ];
@@ -331,13 +331,10 @@ const Home = () => {
 
     return (
         <>
-            <header className="w-full sticky bg-opacity-60 backdrop-blur-lg top-0 z-10 shadow-md    text-white">
+            <header className="w-full sticky bg-white top-0 z-10 shadow-md    text-white">
                 <div className="w-full  text-[#2b3d67]  font-semibold text-sm py-1 px-4 flex justify-end gap-10 items-center">
-                    {/* <p>Call us: +91-1234567890</p>
-                    <p>Email: support@yourdomain.com</p> */}
                 </div>
                 <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3">
-
                     <div className="flex flex-1  items-center gap-4">
                         <img src={logo} alt="Logo" className="h-8 w-auto" />
                         <div className="flex-1  max-w-xl pl-20 w-full">
@@ -361,7 +358,7 @@ const Home = () => {
 
 
                 <div className=" w-full">
-                    <div className="max-w-7xl mx-auto flex gap-6 px-4 py-5     text-[#2b3d67] font-semibold text-sm overflow-x-auto">
+                    <div className="max-w-7xl mx-auto flex gap-6 px-4 py-5     text-[#2b3d67] font-semibold  overflow-x-auto">
                         <a href="#" className="hover:underline">Treatment</a>
                         <a href="#" className="hover:underline">Hospitals</a>
                         <a href="#" className="hover:underline">Doctors</a>
@@ -373,8 +370,7 @@ const Home = () => {
                 </div>
             </header>
             <div
-                className="flex px-10 py-3 bg-cover  bg-center bg-no-repeat "
-                style={{ backgroundImage: `url(${banner})` }}>
+                className="flex px-10 py-3 ">
                 <div className="absolute inset-0 bg-white/50 h-[673px] backdrop-blur-sm"></div>
 
                 <div className='flex relative py-16  flex-row  w-full'>
@@ -384,13 +380,13 @@ const Home = () => {
                             <h1 className="text-gray-900 text-5xl font-bold leading-tight">
                                 Don't Suffer
                             </h1>
-                            <h2 className="text-gray-800 text-[2.6rem] leading-tight font-semibold">
+                            <h2 className="text-gray-900 text-[2.6rem] leading-tight font-semibold">
                                 Get the Best Treatment With
                             </h2>
-                            <h2 className="text-blue-600 text-[2.6rem] leading-tight font-bold">
+                            <h2 className="text-[#2b3d67] text-[2.6rem] leading-tight font-bold">
                                 Exceptional Love & Care
                             </h2>
-                            <div className="w-28 h-1 bg-blue-600 drop-shadow-md rounded mt-1"></div>
+                            <div className="w-28 h-1 bg-[#2b3d67] drop-shadow-md rounded mt-1"></div>
                         </div>
 
                         <div className="mt-5  p-2 rounded-xl ">
@@ -423,7 +419,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="w-full pt-6 md:w-5/12 ">
+                    <div className="w-full pt-6 md:w-6/12 ">
                         <img src={screenshot} alt="patient" className='w-full h-[350px] object-cover rounded-md shadow-md' />
                     </div>
                 </div>
@@ -993,26 +989,8 @@ const Home = () => {
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             {/* Popular Doctors */}
-            <section className="py-12 bg-[#e7f3f7]">
+            <section className="py-12 ">
                 {/* Heading */}
                 <div className="flex justify-center items-center px-6 mb-10">
                     <h2 className=" font-bold text-4xl  text-gray-900">Popular Doctors</h2>
