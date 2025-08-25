@@ -3,47 +3,51 @@ import blkmax from '../assets/blkmax.jpg'
 import natarajan from '../assets/natarajan.webp'
 import pradeep from '../assets/pradeep.webp'
 import suraj from '../assets/surag.webp'
+import { Link } from "react-scroll";
 
 function HospitalData() {
     return (
         <div>
-            <header className="w-full sticky bg-opacity-60 backdrop-blur-lg top-0 z-10 shadow-md    text-white">
-                <div className="w-full  text-[#2b3d67]  font-semibold text-sm py-1 px-4 flex justify-end gap-10 items-center">
-                </div>
-                <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3">
-                    <div className="flex flex-1  items-center gap-4">
-                        <img src={logo} alt="Logo" className="h-8 w-auto" />
-                        <div className="flex-1  max-w-xl pl-20 w-full">
-                            <input
-                                type="text"
-                                placeholder="Search for a procedure, hospital, and doctor.."
-                                className="w-full px-4 py-1.5 text-sm border border-gray-700 shadow-md rounded-sm text-gray-700 focus:outline-none"
-                            />
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-6 mt-4 md:mt-0">
-                        <button className="border border-[#2b3d67] text-sm px-4 py-1.5 rounded-sm text-[#2b3d67] transition">
-                            Get a FREE quote
-                        </button>
-                        <button className="bg-[#17b2aa] text-sm px-4 py-1.5 rounded-sm font-semibold">
-                            Get a FREE Consultation
-                        </button>
-                    </div>
-                </div>
-                <div className=" w-full">
-                    <div className="max-w-7xl mx-auto flex gap-6 px-4 py-5     text-[#2b3d67] font-semibold text-sm overflow-x-auto">
-                        <a href="#" className="hover:underline">Treatment</a>
-                        <a href="#" className="hover:underline">Hospitals</a>
-                        <a href="#" className="hover:underline">Doctors</a>
-                        <a href="#" className="hover:underline">Patient Stories</a>
-                        <a href="#" className="hover:underline">Packages</a>
-                        <a href="#" className="hover:underline">Our Company</a>
-                        <a href="#" className="hover:underline">Knowledge Center</a>
-                    </div>
-                </div>
-            </header>
+           <header className="w-full sticky bg-white top-0 z-10 shadow-md    text-white">
+                           <div className="w-full  text-[#2b3d67]  font-semibold text-sm py-1 px-4 flex justify-end gap-10 items-center">
+                           </div>
+                           <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3">
+                               <div className="flex flex-1  items-center gap-4">
+                                   <img src={logo} alt="Logo" className=" w-44" />
+                                   <div className="flex-1  max-w-xl pl-20 w-full">
+                                       <input
+                                           type="text"
+                                           placeholder="Search for a procedure, hospital, and doctor.."
+                                           className="w-full px-4 py-1.5 text-sm border border-gray-700 shadow-md rounded-sm text-gray-700 focus:outline-none"
+                                       />
+                                   </div>
+                               </div>
+           
+                               <div className="flex items-center gap-6 mt-4 md:mt-0">
+                                   <button className="border border-[#2b3d67] text-sm px-4 py-1.5 rounded-sm text-[#2b3d67] transition">
+                                       Get a FREE quote
+                                   </button>
+                                   <button className="bg-[#17b2aa] text-sm px-4 py-1.5 rounded-sm font-semibold">
+                                       Get a FREE Consultation
+                                   </button>
+                               </div>
+                           </div>
+           
+           
+                           <div className=" w-full">
+                               <div className="max-w-7xl mx-auto flex gap-6 px-4 py-5     text-[#2b3d67] font-semibold  overflow-x-auto">
+                                   <a href="#" className="hover:underline">Treatment</a>
+                                   <a href="#" className="hover:underline">Hospitals</a>
+                                   <a href="#" className="hover:underline">Doctors</a>
+                                   <a href="#" className="hover:underline">Patient Stories</a>
+                                   <a href="#" className="hover:underline">Packages</a>
+                                   <a href="#" className="hover:underline">Our Company</a>
+                                   <a href="#" className="hover:underline">Knowledge Center</a>
+                               </div>
+                           </div>
+                       </header>
             <div className="flex justify-center   w-full">
-                <div className="flex w-8/12 flex-col p-6">
+                <div className="flex w-8/12 flex-col scroll-smooth p-6">
                     <div className="w-full px-6 py-6">
                         {/* Title */}
                         <div className="border-b border-gray-300 pb-4 mb-6">
@@ -64,6 +68,89 @@ function HospitalData() {
                                 className="w-full h-64 object-cover rounded-md shadow-md"
                             />
                         </div>
+                        {/* Section Navigation */}
+                        <nav className="sticky top-0 bg-white  py-3 mb-8 border-b border-gray-200">
+                            <ul className="flex flex-wrap gap-4 text-sm font-medium text-[#2b3d67]">
+                                <li>
+                                    <Link
+                                        to="overview"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        Overview
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="procedures"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        Procedures
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="doctors"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        Doctors
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="facilities"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        facilities
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="reviews"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        Reviews
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="gallery"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        Gallery
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="faqs"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className="cursor-pointer hover:text-[#17b2aa] transition"
+                                    >
+                                        FAQs
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+
 
                         {/* Overview */}
                         <section id="overview" className="mb-10">
@@ -104,10 +191,10 @@ function HospitalData() {
                                     />
                                     <h3 className="font-bold text-gray-800">Dr. Ramesh Gupta</h3>
                                     <p className="text-sm text-gray-600">Senior Cardiologist, 20+ yrs exp.</p>
-                                          <button className="px-4 mt-4
+                                    <button className="px-4 mt-4
                                            py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
-        Book Appointment
-      </button>
+                                        Book Appointment
+                                    </button>
 
                                 </div>
 
@@ -164,6 +251,82 @@ function HospitalData() {
                                 </div>
                             </div>
                         </section>
+                        <section id="reviews" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Patient Reviews</h2>
+                            <div className="space-y-4 mb-6">
+                                {/* Review 1 */}
+                                <div className="flex items-start p-4 bg-white border rounded-xl shadow-md">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                                        alt="Rahul"
+                                        className="w-12 h-12 rounded-full object-cover mr-4"
+                                    />
+                                    <p className="text-sm text-gray-700 italic">
+                                        “The doctors and staff were very professional. My father underwent bypass surgery,
+                                        and the recovery was smooth.” <br />
+                                        <span className="font-semibold not-italic text-gray-900">– Rahul, India</span>
+                                    </p>
+                                </div>
+
+                                {/* Review 2 */}
+                                <div className="flex items-start p-4 bg-white border rounded-xl shadow-md">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/men/45.jpg"
+                                        alt="Carlos"
+                                        className="w-12 h-12 rounded-full object-cover mr-4"
+                                    />
+                                    <p className="text-sm text-gray-700 italic">
+                                        “Apollo made my medical journey stress-free. They handled everything from visa
+                                        to treatment.” <br />
+                                        <span className="font-semibold not-italic text-gray-900">– Carlos, Mexico</span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div className="p-6 border rounded-xl shadow-md bg-gray-50">
+                                <h3 className="text-xl font-bold text-[#2b3d67] mb-4">💬 Leave Your Feedback</h3>
+                                <form className="space-y-4">
+                                    {/* Name Input */}
+                                    <input
+                                        type="text"
+                                        placeholder="Your Name"
+                                        className="w-full border border-gray-300 p-3 rounded-lg text-sm shadow-sm focus:ring-2 focus:ring-[#2b3d67] focus:border-[#2b3d67] outline-none transition"
+                                    />
+
+                                    {/* Rating */}
+                                    <div className="flex items-center space-x-2">
+                                        <span className="text-sm font-medium text-gray-700">Your Rating:</span>
+                                        <div className="flex space-x-1 text-yellow-500 cursor-pointer">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                    </div>
+
+                                    {/* Review Textarea */}
+                                    <textarea
+                                        placeholder="Write your review..."
+                                        rows="4"
+                                        className="w-full border border-gray-300 p-3 rounded-lg text-sm shadow-sm focus:ring-2 focus:ring-[#2b3d67] focus:border-[#2b3d67] outline-none transition"
+                                    ></textarea>
+
+                                    {/* Submit Button */}
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-[#2b3d67] text-white px-4 py-2 rounded-lg hover:bg-[#1f2c4d] transition font-medium text-sm shadow-md"
+                                    >
+                                        Submit Review
+                                    </button>
+                                </form>
+                            </div>
+
+                        </section>
+
+
+
 
                         {/* Gallery */}
                         <section id="gallery" className="mb-10">
@@ -171,6 +334,30 @@ function HospitalData() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <img src={blkmax} alt="Hospital Front" className="rounded-lg shadow-md" />
                                 <img src={blkmax} alt="Hospital Interior" className="rounded-lg shadow-md" />
+                            </div>
+                        </section>
+
+                        <section id="faqs" className="mb-10">
+                            <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Frequently Asked Questions</h2>
+                            <div className="space-y-4">
+                                <details className="p-4 border rounded-lg">
+                                    <summary className="font-semibold cursor-pointer">Does Apollo provide international patient support?</summary>
+                                    <p className="text-sm text-gray-600 mt-2">
+                                        Yes, Apollo has a dedicated international patient department offering visa assistance, translators, and accommodation help.
+                                    </p>
+                                </details>
+                                <details className="p-4 border rounded-lg">
+                                    <summary className="font-semibold cursor-pointer">What are the payment options?</summary>
+                                    <p className="text-sm text-gray-600 mt-2">
+                                        Payments can be made via cash, credit cards, wire transfers, or international insurance partners.
+                                    </p>
+                                </details>
+                                <details className="p-4 border rounded-lg">
+                                    <summary className="font-semibold cursor-pointer">How do I book an appointment with a doctor?</summary>
+                                    <p className="text-sm text-gray-600 mt-2">
+                                        You can use our online booking system or contact our helpline to schedule an appointment with a specialist.
+                                    </p>
+                                </details>
                             </div>
                         </section>
 
