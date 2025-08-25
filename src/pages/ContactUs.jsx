@@ -3,6 +3,7 @@ import blkmax from '../assets/blkmax.jpg'
 import { useState } from 'react'
 import logo from "../assets/logo.png"
 import calculator from "../assets/calculator.png"
+import calculator2 from "../assets/calculator2.png"
 import gpay from "../assets/gpay.png"
 import appstore from "../assets/appstore.png"
 import doctorImg from "../assets/drimg.webp"
@@ -406,61 +407,73 @@ const ContactUs = () => {
                                     </div>
                                 )}
                                 {(index + 1) % 5 === 0 && (
-                                    <div className="w-full  max-w-5xl mx-auto bg-[#f8f8f8] rounded-sm pt-2">
-                                        <div className="flex pl-5 gap-4 mb-4">
-                                            <img src={calculator} alt="Calculator" className="w-20 h-20 object-contain" />
-                                            <h2 className="text-2xl flex justify-center items-center text-[#2b3d67] font-bold">
+                                    <div className="w-full max-w-5xl mx-auto bg-[#2b3d67] rounded-sm pt-2">
+                                        <div className="flex  pl-5 gap-4 mb-4">
+                                            <img
+                                                src={calculator2}
+                                                alt="Calculator"
+                                                className="w-20 h-20   object-contain"
+                                            />
+                                            <h2 className="text-2xl flex justify-center items-center text-white font-bold">
                                                 Piles Surgery Cost Calculator
                                             </h2>
                                         </div>
-                                        <div className=" p-4 flex flex-col md:flex-row md:items-center md:justify-between">
+                                        <div className="p-4 flex border-t flex-col md:flex-row md:items-center md:justify-between">
                                             <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
-                                                <input type="text" placeholder="Patient Name" className="border px-3 border-[#2b3d67] py-1 rounded-sm" />
-                                                <input type="text" placeholder="Mobile Number" className="border px-3 border-[#2b3d67] py-1 rounded-sm" />
-                                                <select className="border px-14 border-[#2b3d67] py-1 text-sm rounded-sm">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Patient Name"
+                                                    className="border px-3 border-white py-1 rounded-sm bg-white text-[#2b3d67]"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="Mobile Number"
+                                                    className="border px-3 border-white py-1 rounded-sm bg-white text-[#2b3d67]"
+                                                />
+                                                <select className="border px-14 border-white py-1 text-sm rounded-sm bg-white text-[#2b3d67]">
                                                     <option>Select City</option>
                                                 </select>
-                                                <button className="bg-[#2b3d67] shadow-md border border-[#2b3d67]  text-sm text-white font-semibold px-6 py-1 rounded-sm">
+                                                <button className="bg-white shadow-md border border-white text-sm text-[#2b3d67] font-semibold px-6 py-1 rounded-sm">
                                                     Get cost
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
+
                                 )}
                                 {(index + 1) % 4 === 0 && (
-                                    <div className="w-full max-w-5xl mx-auto bg-[#f8f8f8] rounded-sm py-6 px-2 flex flex-col items-center">
-
-                                        <h2 className="text-[#2b3d67] text-lg md:text-xl font-bold mb-4 text-center">
+                                    <div className="w-full max-w-5xl mx-auto bg-[#2b3d67] rounded-sm py-6 px-2 flex flex-col items-center">
+                                        <h2 className="text-white text-lg md:text-xl font-bold mb-4 text-center">
                                             Pristyn Care’s Free Post-Operative Care
                                         </h2>
 
                                         <div className="flex flex-col md:flex-row gap-2 mb-4 w-full justify-center">
-
-                                            <div className="flex items-center gap-2 border border-gray-300 rounded-sm px-4 py-1.5 bg-white">
+                                            <div className="flex items-center gap-2 border border-gray-200 rounded-sm px-4 py-1.5 bg-white">
                                                 <span role="img" aria-label="Diet" className="text-xl">🍎</span>
                                                 <p className="text-sm font-semibold text-[#2b3d67]">Diet & Lifestyle Consultation</p>
                                             </div>
 
-                                            <div className="flex items-center gap-2 border border-gray-300 rounded-sm px-4 py-1.5 bg-white">
+                                            <div className="flex items-center gap-2 border border-gray-200 rounded-sm px-4 py-1.5 bg-white">
                                                 <span role="img" aria-label="Follow-Up" className="text-xl">📅</span>
                                                 <p className="text-sm font-semibold text-[#2b3d67]">Post-Surgery Free Follow-Up</p>
                                             </div>
 
-                                            <div className="flex  items-center gap-2 border border-gray-300 rounded-sm p-4 py-1.5 bg-white">
+                                            <div className="flex items-center gap-2 border border-gray-200 rounded-sm px-4 py-1.5 bg-white">
                                                 <span role="img" aria-label="Cab" className="text-xl">🚕</span>
                                                 <p className="text-sm font-semibold text-[#2b3d67]">Free Cab Facility</p>
                                             </div>
 
-                                            <div className="flex items-center gap-2 border border-gray-300 rounded-sm px-4 py-1.5 bg-white">
+                                            <div className="flex items-center gap-2 border border-gray-200 rounded-sm px-4 py-1.5 bg-white">
                                                 <span role="img" aria-label="24/7" className="text-xl">🕑</span>
                                                 <p className="text-sm font-semibold text-[#2b3d67]">24*7 Patient Support</p>
                                             </div>
                                         </div>
 
-                                        <button className="bg-[#2b3d67] text-white mt-2 font-semibold px-6 py-1.5 rounded-sm">
+                                        <button className="bg-white text-[#2b3d67] mt-2 font-semibold px-6 py-1.5 rounded-sm shadow-md">
                                             Chat with Expert for FREE
                                         </button>
                                     </div>
+
                                 )}
                             </React.Fragment>
                         ))}

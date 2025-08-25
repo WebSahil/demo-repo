@@ -32,6 +32,10 @@ import banner from '../assets/banner.jpg'
 import { FaStar, FaRegStar, FaLock } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { GiScalpel } from "react-icons/gi";
+import testimonial1 from '../assets/testimonial1.jpg'
+import testimonial2 from '../assets/testimonial2.jpg'
+import testimonial3 from '../assets/testimonial3.jpg'
+import testimonial4 from '../assets/testimonial4.jpg'
 import HaematologyBMT from "../assets/Haematology&BMT.jpg"
 import Hepatology from "../assets/Hepatology.jpg"
 import InfectiousDisease from "../assets/InfectiousDisease.jpg"
@@ -785,71 +789,77 @@ const Home = () => {
 
             <section className="pb-10 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {/* Testimonial 1 */}
-                        <div className="bg-white px-1 py-2 rounded-2xl shadow-md hover:shadow-md transition flex gap-4 items-start">
-                            {/* Left: photo + details */}
-                            <div className="flex flex-col items-center text-center w-28 ">
+                        <div className="flex bg-white rounded-lg shadow-md overflow-hidden">
+                            <div className="w-5/12 p-4">
                                 <img
-                                    src="https://i.pravatar.cc/100?img=1"
-                                    alt="Client"
-                                    className="w-14 h-14 rounded-full"
+                                    src={testimonial1}
+                                    alt="testimonial1"
+                                    className="w-full h-[7.9rem] object-cover rounded-sm"
                                 />
-                                <h4 className="mt-1 text-sm font-semibold text-gray-900">Amit Sharma</h4>
-
                             </div>
-                            {/* Right: testimonial */}
-                            <p className="text-gray-900 text-sm italic flex-1 ">
-                                "Couriero made my shipments hassle-free. Quick service and great support!"
-                            </p>
+                            <div className="w-7/12 gap-2   flex flex-col justify-center">
+                                <h2 className="text-lg font-semibold ">Mitral valve Replacement Surgery in India</h2>
+                                <p className="text-sm text-gray-700">
+                                    “The doctors and staff were very professional. My father underwent bypass surgery and the recovery was smooth."
+                                </p>
+                                <h3 className="text-sm flex   font-semibold text-[#2b3d67] ">Rahul, India</h3>
+                            </div>
                         </div>
 
                         {/* Testimonial 2 */}
-                        <div className="bg-white px-1 py-2 rounded-2xl shadow-md hover:shadow-md transition flex gap-4 items-start">
-                            <div className="flex flex-col items-center text-center w-28 shrink-0">
+                        <div className="flex bg-white rounded-lg shadow-md overflow-hidden">
+                            <div className="w-5/12 p-4">
                                 <img
-                                    src="https://i.pravatar.cc/100?img=2"
-                                    alt="Client"
-                                    className="w-14 h-14 rounded-full"
+                                    src={testimonial2}
+                                    alt="testimonial2"
+                                    className="w-full h-[7.9rem] object-cover rounded-sm"
                                 />
-                                <h4 className="mt-1 text-sm font-semibold text-gray-900">Priya Verma</h4>
-
                             </div>
-                            <p className="text-gray-900 text-sm  italic flex-1">
-                                "The best courier aggregator. I saved money and time on every delivery."
-                            </p>
+                            <div className="w-7/12 gap-2 flex flex-col justify-center">
+                                <h2 className="text-lg font-semibold">Successful Bypass Surgery in India</h2>
+                                <p className="text-sm text-gray-700">
+                                    “Apollo made my medical journey stress-free. They handled everything from visa to treatment.”
+                                </p>
+                                <h3 className="text-sm flex font-semibold text-[#2b3d67]">Carlos, Mexico</h3>
+                            </div>
                         </div>
 
                         {/* Testimonial 3 */}
-                        <div className="bg-white px-1 py-2 rounded-2xl shadow-md hover:shadow-md transition flex gap-4 items-start">
-                            <div className="flex flex-col items-center text-center w-28 shrink-0">
+                        <div className="flex bg-white rounded-lg shadow-md overflow-hidden">
+                            <div className="w-5/12 p-4">
                                 <img
-                                    src="https://i.pravatar.cc/100?img=3"
-                                    alt="Client"
-                                    className="w-14 h-14 rounded-full"
+                                    src={testimonial3}
+                                    alt="testimonial3"
+                                    className="w-full h-[7.9rem] object-cover rounded-sm"
                                 />
-                                <h4 className="mt-1 text-sm font-semibold text-gray-900">Rahul Mehta</h4>
                             </div>
-                            <p className="text-gray-900 text-sm italic flex-1">
-                                "Very reliable and easy-to-use platform. Highly Highly recommended!"
-                            </p>
+                            <div className="w-7/12 gap-2 flex flex-col justify-center">
+                                <h2 className="text-lg font-semibold">World-Class Care & Facilities</h2>
+                                <p className="text-sm text-gray-700">
+                                    “The hospital provided world-class care and advanced facilities. I felt at ease during my entire stay.”
+                                </p>
+                                <h3 className="text-sm flex font-semibold text-[#2b3d67]">Sophia, UK</h3>
+                            </div>
                         </div>
 
                         {/* Testimonial 4 */}
-                        <div className="bg-white px-1 py-2 rounded-2xl shadow-md hover:shadow-md transition flex gap-4 items-start">
-                            <div className="flex flex-col items-center text-center w-28 shrink-0">
+                        <div className="flex bg-white rounded-lg shadow-md overflow-hidden">
+                            <div className="w-5/12 p-4">
                                 <img
-                                    src="https://i.pravatar.cc/100?img=4"
-                                    alt="Client"
-                                    className="w-14 h-14 rounded-full"
+                                    src={testimonial4}
+                                    alt="testimonial4"
+                                    className="w-full h-[7.9rem] object-cover rounded-sm"
                                 />
-                                <h4 className="mt-1 text-sm font-semibold text-gray-900">Neha Kapoor</h4>
-
                             </div>
-                            <p className="text-gray-900 text-sm italic flex-1">
-                                "Customer support was amazing. My queries were solved instantly."
-                            </p>
+                            <div className="w-7/12 gap-2 flex flex-col justify-center">
+                                <h2 className="text-lg font-semibold">Exceptional Treatment & Support</h2>
+                                <p className="text-sm text-gray-700">
+                                    “Excellent doctors and modern facilities. I am grateful for the exceptional treatment and support I received.”
+                                </p>
+                                <h3 className="text-sm flex font-semibold text-[#2b3d67]">Ahmed, UAE</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -859,11 +869,11 @@ const Home = () => {
             <section className="py-9  ">
 
                 <div className='flex justify-start items-center pt-5'>
-                        <h2 className="text-[2rem] pb-9 leading-10  text-left pl-7 font-normal text-gray-900">
-                            Connect with<br />
-                            <span className="text-5xl  text-center font-bold text-gray-900">Best Hospitals</span>
-                        </h2>
-                    </div>
+                    <h2 className="text-[2rem] pb-9 leading-10  text-left pl-7 font-normal text-gray-900">
+                        Connect with<br />
+                        <span className="text-5xl  text-center font-bold text-gray-900">Best Hospitals</span>
+                    </h2>
+                </div>
 
                 <div className="flex space-x-2 pb-10 overflow-x-scroll px-6 scrollbar-hide">
                     {hospitals.map((hospital, index) => (
@@ -894,10 +904,10 @@ const Home = () => {
             <div className='flex px-12 pb-8'>
                 <div className='flex flex-col rounded-xl shadow-md  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>
                     <h2 className="text-center  text-4xl mt-8 font-bold text-gray-900  mb-2  ">
-                        We are with you for every need 
+                        We are with you for every need
                     </h2>
                     <h2 className="text-center  text-lg font-semibold pb-8   ">
-                       Far from Home we are here with you as a second Family
+                        Far from Home we are here with you as a second Family
                     </h2>
                     <div className='flex pt-5 w-full gap-3'>
                         <div className=' w-5/12 '>
@@ -1017,17 +1027,17 @@ const Home = () => {
                 </div>
             </div>
 
-            
-            <section className="py-12 ">
-                
-                 <div className='flex justify-start items-center'>
-                        <h2 className="text-[2rem] pb-7 leading-10  text-left pl-7 font-normal text-gray-900">
-                            Connect with<br />
-                            <span className="text-5xl  text-center font-bold text-gray-900">Medical Professionals</span>
-                        </h2>
-                    </div>
 
-                
+            <section className="py-12 ">
+
+                <div className='flex justify-start items-center'>
+                    <h2 className="text-[2rem] pb-7 leading-10  text-left pl-7 font-normal text-gray-900">
+                        Connect with<br />
+                        <span className="text-5xl  text-center font-bold text-gray-900">Medical Professionals</span>
+                    </h2>
+                </div>
+
+
                 <div className="flex space-x-3 overflow-x-auto p-6 scrollbar-hide ">
                     {doctors.map((doc, i) => (
                         <div
@@ -1097,11 +1107,11 @@ const Home = () => {
             <section className="py-12 bg-gray-50">
 
                 <div className='flex justify-center items-center pt-5'>
-                        <h2 className="text-[2rem] pb-9   text-center pl-7 font-semibold text-gray-900">
-                            Stay Tuned with us<br />
-                            <span className="text-5xl  text-center font-bold text-gray-900"> Get  Medical Information by Professionals</span>
-                        </h2>
-                    </div>
+                    <h2 className="text-[2rem] pb-9   text-center pl-7 font-semibold text-gray-900">
+                        Stay Tuned with us<br />
+                        <span className="text-5xl  text-center font-bold text-gray-900"> Get  Medical Information by Professionals</span>
+                    </h2>
+                </div>
 
                 <div className="relative">
                     <div className="flex space-x-3 overflow-x-auto p-6 scrollbar-hide">
