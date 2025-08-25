@@ -190,7 +190,7 @@ function HospitalData() {
                                         className="w-28 h-28 rounded-full object-cover mb-3"
                                     />
                                     <h3 className="font-bold text-gray-800">Dr. Ramesh Gupta</h3>
-                                    <p className="text-sm text-gray-600">Senior Cardiologist, 20+ yrs exp.</p>
+                                    <p className="text-sm text-gray-600">Cardiologist, 20+ yrs exp.</p>
                                     <button className="px-4 mt-4
                                            py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
                                         Book Appointment
@@ -206,6 +206,10 @@ function HospitalData() {
                                     />
                                     <h3 className="font-bold text-gray-800">Dr. Anita Sharma</h3>
                                     <p className="text-sm text-gray-600">Oncologist, 15+ yrs exp.</p>
+                                    <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+                                        Book Appointment
+                                    </button>
                                 </div>
 
                                 <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
@@ -215,7 +219,11 @@ function HospitalData() {
                                         className="w-28 h-28 rounded-full object-cover mb-3"
                                     />
                                     <h3 className="font-bold text-gray-800">Dr. Vikram Singh</h3>
-                                    <p className="text-sm text-gray-600">Orthopedic Surgeon, 18+ yrs exp.</p>
+                                    <p className="text-sm text-gray-600">Orthopedic , 18+ yrs exp.</p>
+                                    <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+                                        Book Appointment
+                                    </button>
                                 </div>
 
                             </div>
