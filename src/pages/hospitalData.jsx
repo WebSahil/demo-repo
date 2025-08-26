@@ -446,7 +446,7 @@ function HospitalData() {
                             <section id="video-testimonials" className="mb-12">
                                 <h2 className="text-2xl font-semibold text-[#2b3d67] my-6">Video Testimonials</h2>
 
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                                     {testimonials.slice(0, 5).map((video, index) => (
                                         <a
                                             key={index}
@@ -531,7 +531,9 @@ function HospitalData() {
                         {/* Gallery */}
                         <section id="gallery" className="mb-10">
                             <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Gallery</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <img src={blkmax} alt="Hospital Front" className="rounded-lg shadow-md" />
+                                <img src={blkmax} alt="Hospital Interior" className="rounded-lg shadow-md" />
                                 <img src={blkmax} alt="Hospital Front" className="rounded-lg shadow-md" />
                                 <img src={blkmax} alt="Hospital Interior" className="rounded-lg shadow-md" />
                             </div>
@@ -539,7 +541,7 @@ function HospitalData() {
 
                         <section id="faqs" className="mb-10">
                             <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Frequently Asked Questions</h2>
-                            <div className="space-y-4">
+                            <div className="space-y-2">
                                 <details className="p-4 border rounded-lg">
                                     <summary className="font-semibold cursor-pointer">Does Apollo provide international patient support?</summary>
                                     <p className="text-sm text-gray-600 mt-2">

@@ -4,6 +4,7 @@ import HospitalPage from './pages/hospital';
 import ContactUs from './pages/ContactUs'; 
 import Home from './pages/home';
 import HospitalData from './pages/hospitalData';
+import DoctorsData from './pages/doctorsData';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/home" element={<Home />} />
         <Route path="/hospitaldata" element={<HospitalData />} />
+        <Route path="/doctorsdata" element={<DoctorsData />} />
       </Routes>
     </Router>
   );
