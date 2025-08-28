@@ -4,6 +4,7 @@ import pradeep from '../assets/pradeep.webp'
 import suraj from '../assets/surag.webp'
 import blkmax from '../assets/blkmax.jpg'
 import fortis from '../assets/fortis.webp'
+"use client"
 
 
 function MedicalCost() {
@@ -243,7 +244,7 @@ function MedicalCost() {
           Listing approximate price of cosmetic treatments and related procedures. 
           Prices may vary depending on the centers and patient condition.
         </p>
-        
+
       </div>
       <div className="overflow-x-auto border rounded-b-xl">
         <table className="w-full border-collapse text-sm">
