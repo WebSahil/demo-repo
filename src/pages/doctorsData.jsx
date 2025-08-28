@@ -1,8 +1,6 @@
-import logo from "../assets/logo1.png"
 import natarajan from '../assets/natarajan.webp'
 import pradeep from '../assets/pradeep.webp'
 import suraj from '../assets/surag.webp'
-import { Link } from "react-scroll";
 import testimonial1 from '../assets/testimonial1.jpg'
 import testimonial2 from '../assets/testimonial2.jpg'
 import testimonial3 from '../assets/testimonial3.jpg'
@@ -63,44 +61,7 @@ function DoctorsData() {
 
 
     return (<>
-        <header className="w-full sticky bg-white top-0 z-10 shadow-md    text-white">
-            <div className="w-full  text-[#2b3d67]  font-semibold text-sm py-1 px-4 flex justify-end gap-10 items-center">
-            </div>
-            <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3">
-                <div className="flex flex-1  items-center gap-4">
-                    <img src={logo} alt="Logo" className=" w-44" />
-                    <div className="flex-1  max-w-xl pl-20 w-full">
-                        <input
-                            type="text"
-                            placeholder="Search for a procedure, hospital, and doctor.."
-                            className="w-full px-4 py-1.5 text-sm border border-gray-700 shadow-md rounded-sm text-gray-700 focus:outline-none"
-                        />
-                    </div>
-                </div>
 
-                <div className="flex items-center gap-6 mt-4 md:mt-0">
-                    <button className="border border-[#2b3d67] text-sm px-4 py-1.5 rounded-sm text-[#2b3d67] transition">
-                        Get a FREE quote
-                    </button>
-                    <button className="bg-[#17b2aa] text-sm px-4 py-1.5 rounded-sm font-semibold">
-                        Get a FREE Consultation
-                    </button>
-                </div>
-            </div>
-
-
-            <div className=" w-full">
-                <div className="max-w-7xl mx-auto flex gap-6 px-4 py-5     text-[#2b3d67] font-semibold  overflow-x-auto">
-                    <a href="#" className="hover:underline">Treatment</a>
-                    <a href="#" className="hover:underline">Hospitals</a>
-                    <a href="#" className="hover:underline">Doctors</a>
-                    <a href="#" className="hover:underline">Patient Stories</a>
-                    <a href="#" className="hover:underline">Packages</a>
-                    <a href="#" className="hover:underline">Our Company</a>
-                    <a href="#" className="hover:underline">Knowledge Center</a>
-                </div>
-            </div>
-        </header>
         <div className="flex justify-center   w-full">
             <div className="flex w-8/12 flex-col p-6 scroll-smooth space-y-10">
 
@@ -613,83 +574,6 @@ function DoctorsData() {
                 </div>
             </div>
         </div>
-        <footer className="bg-[#052b47] text-white">
-            <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-                {/* Our Company */}
-                <div>
-                    <h3 className="text-lg font-bold mb-4">Our Company</h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
-                        <li><a href="#" className="hover:underline">About Us</a></li>
-                        <li><a href="#" className="hover:underline">Contact Us</a></li>
-                        <li><a href="#" className="hover:underline">Careers</a></li>
-                        <li><a href="#" className="hover:underline">Blogs</a></li>
-                        <li><a href="#" className="hover:underline">Doctor Onboarding</a></li>
-                    </ul>
-                </div>
-
-                {/* Surgery */}
-                <div>
-                    <h3 className="text-lg font-bold mb-4">Surgery</h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
-                        <li><a href="#" className="hover:underline">Laser Surgery</a></li>
-                        <li><a href="#" className="hover:underline">Laparoscopy Surgery</a></li>
-                        <li><a href="#" className="hover:underline">Cosmetic Surgery</a></li>
-                        <li><a href="#" className="hover:underline">Ear Surgery</a></li>
-                        <li><a href="#" className="hover:underline">Plastic Surgery</a></li>
-                    </ul>
-                </div>
-
-                {/* For Patients */}
-                <div>
-                    <h3 className="text-lg font-bold mb-4">For Patients</h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
-                        <li><a href="#" className="hover:underline">FAQs</a></li>
-                        <li><a href="#" className="hover:underline">Patient Help</a></li>
-                        <li><a href="#" className="hover:underline">Find a Clinic</a></li>
-                        <li><a href="#" className="hover:underline">Doctors Section</a></li>
-                        <li><a href="#" className="hover:underline">Videos</a></li>
-                    </ul>
-                </div>
-
-                {/* Other Links & Social */}
-                <div>
-                    <h3 className="text-lg font-bold mb-4">Other Links</h3>
-                    <ul className="space-y-2 text-gray-300 text-sm mb-6">
-                        <li><a href="#" className="hover:underline">BMI Calculator</a></li>
-                        <li><a href="#" className="hover:underline">Pregnancy Calculator</a></li>
-                        <li><a href="#" className="hover:underline">Cost Index</a></li>
-                        <li><a href="#" className="hover:underline">All Treatments</a></li>
-                    </ul>
-                    <h3 className="text-lg font-bold mb-2">Social Media</h3>
-                    <div className="flex space-x-4">
-                        <a href="#" aria-label="Facebook" className="hover:text-[#17b2aa]">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" aria-label="Instagram" className="hover:text-[#17b2aa]">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" aria-label="LinkedIn" className="hover:text-[#17b2aa]">
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" aria-label="Twitter" className="hover:text-[#17b2aa]">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" aria-label="YouTube" className="hover:text-[#17b2aa]">
-                            <i className="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="border-t border-gray-700 py-4 px-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-xs">
-                <p>&copy; {new Date().getFullYear()} JD Max Healthcare. All rights reserved.</p>
-                <div className="flex space-x-4 mt-2 md:mt-0">
-                    <a href="#" className="hover:underline">Terms & Conditions</a>
-                    <a href="#" className="hover:underline">Privacy Policy</a>
-                    <a href="#" className="hover:underline">Refund Policy</a>
-                </div>
-            </div>
-        </footer>
     </>)
 }
 
