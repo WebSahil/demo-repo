@@ -173,7 +173,7 @@ function MedicalCost() {
           <h2 className="text-xl font-semibold text-[#2b3d67] mb-5">
             Doctors for Cosmetic Treatment in India
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-3">
             {[1, 2, 3, 4].map((doc) => (
               <div
                 key={doc}
@@ -205,7 +205,7 @@ function MedicalCost() {
           <h2 className="text-xl font-semibold text-[#2b3d67] mb-5">
             Leading Hospitals for Cosmetic Treatment in India
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-3">
             {[1, 2, 3].map((hosp) => (
               <div
                 key={hosp}
@@ -279,7 +279,7 @@ function MedicalCost() {
           <p className="text-sm text-gray-600 mb-4">
             Transparent · Professional · Without Hassles
           </p>
-          <div className="grid md:grid-cols-4 gap-4 mb-5">
+          <div className="grid md:grid-cols-4 gap-3 mb-5">
             {["Book Appointment", "Video Consult", "Cost Estimate", "Support"].map(
               (srv, idx) => (
                 <div
