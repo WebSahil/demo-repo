@@ -8,6 +8,7 @@ import DoctorsData from "./pages/doctorsData";
 import MedicalCost from "./pages/medicalCost";
 
 import Layout from "./components/layout"
+import BlogPage from "./pages/blogpage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/hospitaldata" element={<HospitalData />} />
           <Route path="/doctorsdata" element={<DoctorsData />} />
           <Route path="/medicalCost" element={<MedicalCost />} />
+          <Route path="/blogpage" element={<BlogPage />} />
         </Routes>
       </Layout>
     </Router>

@@ -1,5 +1,3 @@
-import React from 'react'
-import logo from "../assets/logo1.png"
 import callimg from "../assets/callimg.svg"
 import flight from "../assets/flight.svg"
 import treated from "../assets/treated.svg"
@@ -23,12 +21,9 @@ import pradeep from '../assets/pradeep.webp'
 import suraj from '../assets/surag.webp'
 import blog1 from '../assets/blog1.webp'
 import blog2 from '../assets/blog2.webp'
-import indiaFlag from '../assets/india-flag.webp'
 import blog3 from '../assets/blog3.webp'
-import mexicoFlag from '../assets/mexico.webp'
 import mexico1 from '../assets/mexico1.webp'
 import tajmahal from '../assets/taj-mahal.webp'
-import banner from '../assets/banner.jpg'
 import { FaStar, FaRegStar, FaLock } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { GiScalpel } from "react-icons/gi";
@@ -36,11 +31,10 @@ import testimonial1 from '../assets/testimonial1.jpg'
 import testimonial2 from '../assets/testimonial2.jpg'
 import testimonial3 from '../assets/testimonial3.jpg'
 import testimonial4 from '../assets/testimonial4.jpg'
-import HaematologyBMT from "../assets/Haematology&BMT.jpg"
-import Hepatology from "../assets/Hepatology.jpg"
-import InfectiousDisease from "../assets/InfectiousDisease.jpg"
-import Infertility from "../assets/Infertility.jpg"
-import NephrologyUrology from "../assets/NephrologyUrology.jpg"
+import ayurveda1 from '../assets/ayurveda1.jpeg'
+import ayurveda2 from '../assets/ayurveda2.jpeg'
+import ayurveda3 from '../assets/ayurveda3.jpeg'
+import ayurveda4 from '../assets/ayurveda4.jpeg'
 const Home = () => {
 
     const testimonials = [
@@ -337,7 +331,7 @@ const Home = () => {
 
     return (
         <>
-          
+
             <div className="flex px-10 py-3 bg-[#2b3d67] relative">
 
                 <div className="flex relative py-16 flex-row w-full">
@@ -488,7 +482,7 @@ const Home = () => {
                 </h2>
             </div>
             <div className='flex flex-row justify-center gap-3 items-center px-8 py-8'>
-                <div className="bg-white rounded-2xl shadow-md w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-md shadow-md w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={BariatricSurgery}
                         alt="Bariatric Surgery"
@@ -507,7 +501,7 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className="bg-white rounded-2xl shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-md shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={CardiacSciences}
                         alt="Bariatric Surgery"
@@ -526,7 +520,7 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className="bg-white rounded-2xl shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-md shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={ENT}
                         alt="Bariatric Surgery"
@@ -545,7 +539,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className="bg-white rounded-2xl shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-md shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={GeneralandLaparoscopic}
                         alt="Bariatric Surgery"
@@ -563,7 +557,7 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className="bg-white rounded-2xl shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-md shadow-md  w-72 text-center border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={GeneralMedicine}
                         alt="Bariatric Surgery"
@@ -587,6 +581,93 @@ const Home = () => {
                     View More
                 </button>
             </div>
+
+            {/* Wellness */}
+
+            {/* Ayurveda Wellness Section */}
+            <section className="py-12 mb-10 bg-[#e7f3f7] rounded-lg shadow">
+                <div className="max-w-7xl mx-auto px-12 text-center">
+                    <h2 className="text-2xl  text-[#2b3d67] font-semibold mb-8">
+                        <span className='text-5xl font-bold'>Wellness </span> through <br /><span className='text-5xl font-bold'>
+                            Ayurveda</span>
+                    </h2>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        {/* Card 1 */}
+                        <div className="bg-white rounded-md shadow overflow-hidden">
+                            <img
+                                src={ayurveda1}
+                                alt="Panchakarma Therapy"
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="p-4">
+                                <h3 className="text-lg font-bold text-[#2b3d67] mb-2">
+                                    Panchakarma Therapy
+                                </h3>
+                                <p className="text-gray-600 text-sm">
+                                    A detoxifying therapy that eliminates toxins, strengthens immunity, and restores body balance.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className="bg-white rounded-md shadow overflow-hidden">
+                            <img
+                                src={ayurveda2}
+                                alt="Abhyanga Massage"
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="p-4">
+                                <h3 className="text-lg font-bold text-[#2b3d67] mb-2">
+                                    Abhyanga Massage
+                                </h3>
+                                <p className="text-gray-600 text-sm">
+                                    Warm herbal oil massage that improves circulation, reduces stress, and nourishes the skin.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="bg-white rounded-md shadow overflow-hidden">
+                            <img
+                                src={ayurveda3}
+                                alt="Shirodhara"
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="p-4">
+                                <h3 className="text-lg font-bold text-[#2b3d67] mb-2">
+                                    Shirodhara
+                                </h3>
+                                <p className="text-gray-600 text-sm">
+                                    Calming therapy where warm oil flows on the forehead, helping with anxiety, insomnia, and migraines.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Card 4 */}
+                        <div className="bg-white rounded-md shadow overflow-hidden">
+                            <img
+                                src={ayurveda4}
+                                alt="Herbal Steam Therapy"
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="p-4">
+                                <h3 className="text-lg font-bold text-[#2b3d67] mb-2">
+                                    Herbal Steam Therapy
+                                </h3>
+                                <p className="text-gray-600 text-sm">
+                                    A herbal steam bath that opens pores, removes toxins, and refreshes your body naturally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
             {/* How do we work */}
             <div className='flex px-12 py-5'>
                 <div className='flex flex-col rounded-xl shadow-md  bg-[#e7f3f7] justify-center w-full h-full px-10 py-5'>

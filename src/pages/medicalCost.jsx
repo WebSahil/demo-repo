@@ -26,6 +26,58 @@ const AnimatedSection = ({ children }) => {
 };
 
 function MedicalCost() {
+
+  const testimonials = [
+    {
+      title: "Liver Transplant in India",
+      thumbnail: "https://img.youtube.com/vi/yAE4koYwrc0/hqdefault.jpg",
+      url: "https://youtu.be/yAE4koYwrc0?si=NjSz3MnZiX_vdHy3",
+      description: "Life-saving liver transplant performed by expert Indian surgeons."
+    },
+    {
+      title: "Bone Marrow Transplant in India",
+      thumbnail: "https://img.youtube.com/vi/EupN-19V9dM/hqdefault.jpg",
+      url: "https://youtu.be/EupN-19V9dM?si=rF6-DEyege46XnPO",
+      description: "Advanced bone marrow transplant with high success rate in India."
+    },
+    {
+      title: "MAKO Robotic Hip Replacement",
+      thumbnail: "https://img.youtube.com/vi/RQ0u9P6D7uE/hqdefault.jpg",
+      url: "https://youtu.be/RQ0u9P6D7uE?si=xm6zU-rAMwnbZDcx",
+      description: "Robotic technology ensures faster recovery and precise hip surgery."
+    },
+    {
+      title: "Kidney Transplant Surgery",
+      thumbnail: "https://img.youtube.com/vi/9GPZAAV1yqs/hqdefault.jpg",
+      url: "https://youtu.be/9GPZAAV1yqs?si=KgpMvE45JjNHH0cH",
+      description: "Expert kidney transplant procedure with excellent patient outcomes."
+    },
+    {
+      title: "MAKO Robotic Hip Replacement",
+      thumbnail: "https://img.youtube.com/vi/Ytds2BxKtZk/hqdefault.jpg",
+      url: "https://youtu.be/Ytds2BxKtZk?si=f17DHbGXzBZmi73w",
+      description: "Innovative robotic hip replacement by top orthopedic surgeons."
+    },
+    {
+      title: "Kidney Transplant Surgery",
+      thumbnail: "https://img.youtube.com/vi/wcgGoushG0w/hqdefault.jpg",
+      url: "https://youtu.be/wcgGoushG0w?si=oTb7bkFyUAugL22l",
+      description: "Renowned hospitals offer safe and affordable kidney transplants."
+    },
+    {
+      title: "MAKO Robotic Hip Replacement",
+      thumbnail: "https://img.youtube.com/vi/jo143IXVTYo/hqdefault.jpg",
+      url: "https://youtu.be/jo143IXVTYo?si=o5hrZGio0aKzNxEE",
+      description: "Experience pain-free recovery with robotic-assisted hip surgery."
+    },
+    {
+      title: "Kidney Transplant Surgery",
+      thumbnail: "https://img.youtube.com/vi/uwY0Qp2R8mw/hqdefault.jpg",
+      url: "https://youtu.be/uwY0Qp2R8mw?si=HJDf5zre6nBTzM_4",
+      description: "Trusted kidney transplant specialists with global patient success."
+    }
+  ];
+
   const mostAsked = [
     "Gender Change Surgery",
     "Vaginal Tightening",
@@ -222,9 +274,9 @@ function MedicalCost() {
     `}</style>
       <div className="flex justify-center w-full bg-gray-50 font-sans">
         <div className="flex flex-col md:flex-row w-full max-w-screen-xl">
-          {/* Main Content */}
-          <div className="w-full md:w-8/12 flex flex-col p-4 md:p-6 lg:p-8 scroll-smooth space-y-16">
-            {/* Hero Section */}
+
+          <div className="w-full md:w-8/12 flex flex-col p-4 md:p-6 lg:p-8 scroll-smooth space-y-10">
+
             <AnimatedSection>
               <header className="text-center">
                 <h1 className="text-4xl lg:text-5xl font-extrabold text-[#2b3d67] tracking-tight">
@@ -239,7 +291,7 @@ function MedicalCost() {
 
             {/* Procedures Section */}
             <AnimatedSection>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-1 gap-3">
                 <div className="border p-5 rounded-xl shadow-lg bg-white">
                   <h2 className="text-xl font-bold text-[#2b3d67] mb-4">
                     Most Asked Procedures
@@ -294,60 +346,251 @@ function MedicalCost() {
               </div>
             </AnimatedSection>
 
+
+            <section className="p-5 bg-blue-100 rounded-lg shadow">
+              <h2 className="text-2xl font-bold text-[#2b3d67] mb-4">
+                Cost of Cosmetic Treatment in India: Detailed Overview
+              </h2>
+
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Cosmetic surgery in India is gaining massive popularity due to its
+                affordability and high-quality standards. Patients can choose from a wide
+                range of procedures including surgical and non-surgical options tailored to
+                their needs. With internationally trained doctors and modern infrastructure,
+                India has become a leading medical tourism hub for cosmetic treatments.
+              </p>
+
+              {/* Heading 1 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Average Cost Range of Popular Treatments
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                Different cosmetic treatments come with different price tags. On average,
+                Indian cosmetic surgery costs are 60–70% lower than in Western countries.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4">
+                <li>Facial Procedures (Rhinoplasty, facelift, eyelid surgery): ₹1.5–3.5 Lakh</li>
+                <li>Body Contouring (Liposuction, tummy tuck, body lift): ₹1.2–2.8 Lakh</li>
+                <li>Breast Procedures (Augmentation, lift, reduction): ₹1.0–2.5 Lakh</li>
+                <li>Non-Surgical (Botox, fillers, PRP, laser): ₹10,000–50,000 per session</li>
+              </ul>
+
+              {/* Heading 2 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Why India is a Preferred Destination
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                India attracts thousands of international patients every year. The reasons
+                include affordability, skilled doctors, and world-class healthcare systems.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4">
+                <li>✔ Affordable pricing compared to the USA/UK</li>
+                <li>✔ Globally certified and highly experienced surgeons</li>
+                <li>✔ International standards of hospitals and technology</li>
+                <li>✔ Customized recovery plans and patient-friendly packages</li>
+              </ul>
+
+              {/* Heading 3 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Factors Affecting the Cost of Cosmetic Surgery
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                The cost may vary based on several aspects, such as:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4">
+                <li>🏥 Location of hospital (metro vs smaller cities)</li>
+                <li>👨‍⚕️ Surgeon’s experience and expertise</li>
+                <li>⚙️ Technology used (robotic-assisted, laser, etc.)</li>
+                <li>🛌 Post-surgery care and hospitalization days</li>
+              </ul>
+
+              {/* Heading 4 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Hidden Costs You Should Know
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                While base surgery charges are often highlighted, patients should also be
+                aware of additional costs such as:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-4">
+                <li>Pre-surgery medical tests and consultations</li>
+                <li>Anesthesia and operation theatre charges</li>
+                <li>Post-operative medicines and dressing</li>
+                <li>Follow-up visits and aftercare sessions</li>
+              </ul>
+
+              {/* Heading 5 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Medical Tourism & International Patients
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                India has become a global hub for medical tourism. Cities like Delhi,
+                Mumbai, Bangalore, and Chennai are equipped with hospitals catering to
+                foreign patients with dedicated staff, translators, and international
+                patient lounges.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                International patients often choose India because of the cost advantage. A
+                cosmetic procedure that costs $12,000 in the USA may only cost around
+                $3,000–$4,000 in India, including hospital stay and follow-up care.
+              </p>
+
+              {/* Heading 6 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Comparing India with Western Countries
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Here’s a quick comparison of cosmetic surgery costs in India vs USA/UK:
+              </p>
+              <table className="table-auto border-collapse border border-gray-300 mb-4 w-full text-sm">
+                <thead>
+                  <tr className="bg-[#d9efff]">
+                    <th className="border border-gray-300 p-2">Procedure</th>
+                    <th className="border border-gray-300 p-2">India (INR)</th>
+                    <th className="border border-gray-300 p-2">USA (USD)</th>
+                    <th className="border border-gray-300 p-2">UK (£)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 p-2">Rhinoplasty</td>
+                    <td className="border border-gray-300 p-2">₹1.8–3.5 Lakh</td>
+                    <td className="border border-gray-300 p-2">$6,000–10,000</td>
+                    <td className="border border-gray-300 p-2">£4,500–7,000</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2">Liposuction</td>
+                    <td className="border border-gray-300 p-2">₹1.2–2.8 Lakh</td>
+                    <td className="border border-gray-300 p-2">$5,500–9,000</td>
+                    <td className="border border-gray-300 p-2">£3,500–6,000</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2">Breast Augmentation</td>
+                    <td className="border border-gray-300 p-2">₹1.5–2.5 Lakh</td>
+                    <td className="border border-gray-300 p-2">$7,000–12,000</td>
+                    <td className="border border-gray-300 p-2">£4,000–6,500</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              {/* Heading 7 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Important Considerations Before Treatment
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Before opting for cosmetic surgery, patients must verify the hospital’s
+                accreditation, surgeon’s qualifications, and review past case studies.
+                Safety, hygiene, and aftercare are as important as the cost itself.
+              </p>
+
+              {/* Heading 8 */}
+              <h3 className="text-lg font-semibold text-[#2b3d67] mt-6 mb-2">
+                Conclusion
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Cosmetic surgery in India is cost-effective, safe, and reliable when done at
+                accredited hospitals by expert surgeons. With medical tourism growing every
+                year, India continues to be a preferred destination for people seeking
+                quality cosmetic enhancements at affordable prices.
+              </p>
+            </section>
+
+
+
+
             {/* Doctors Section */}
             <AnimatedSection>
-              <section>
-                <h2 className="text-3xl font-extrabold text-[#2b3d67] mb-6 text-center">
-                  Meet Our Top Surgeons
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  {doctors.map((doc, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-white p-4 rounded-xl shadow-xl flex flex-col text-center items-center transition-transform transform hover:-translate-y-2"
-                    >
-                      <img
-                        src={suraj}
-                        alt={`Dr. ${doc.name}`}
-                        className="w-28 h-28 object-cover rounded-full mb-4 border-4 border-[#d9efff]"
-                      />
+              <section id="doctors" className="mb-10">
+                <h2 className="text-2xl font-semibold text-[#2b3d67] pb-7">Our Doctors</h2>
+                <div className="mb-3">
 
-                      <div className="flex-grow">
-                        <h3 className="font-bold text-xl text-[#2b3d67]">
-                          {doc.name}
-                        </h3>
-                        <p className="text-sm text-[#17b2aa] font-semibold">
-                          {doc.title}
-                        </p>
-                        <p className="text-sm text-gray-500 mt-1">
-                          {doc.hospital}
-                        </p>
-                        <div className="flex gap-3 mt-4">
-                          <button className="bg-[#2b3d67] text-sm shadow-md text-white px-4 py-2 rounded-lg hover:bg-opacity-90 font-semibold">
-                            Book Appointment
-                          </button>
-                          <button className="bg-white text-sm shadow-md text-[#2b3d67] border-2 border-[#2b3d67] px-6 py-2 rounded-lg hover:bg-gray-100 font-semibold">
-                            Chat
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                  <select
+                    id="doctor-category"
+                    className="border border-gray-300 pl-4 py-1.5 rounded-md text-gray-700 w-full md:w-60 
+                              focus:ring-2 focus:ring-[#2b3d67] focus:border-[#2b3d67] 
+                              hover:border-[#2b3d67] cursor-pointer transition"
+                  >
+                    <option value="all" className="text-gray-700">All Categories</option>
+                    <option value="cardiologist" className="text-gray-700">Cardiologist</option>
+                    <option value="oncologist" className="text-gray-700">Oncologist</option>
+                    <option value="orthopedic" className="text-gray-700">Orthopedic</option>
+                  </select>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+
+                  <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img
+                      src={natarajan}
+                      alt="Dr. Ramesh Gupta"
+                      className="w-28 h-28 rounded-full object-cover mb-3"
+                    />
+                    <h3 className="font-bold text-gray-800">Dr. Ramesh Gupta</h3>
+                    <p className="text-sm text-gray-600">Cardiologist, 20+ yrs exp.</p>
+                    <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+                      Book Appointment
+                    </button>
+
+                  </div>
+
+                  <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img
+                      src={suraj}
+                      alt="Dr. Anita Sharma"
+                      className="w-28 h-28 rounded-full object-cover mb-3"
+                    />
+                    <h3 className="font-bold text-gray-800">Dr. Anita Sharma</h3>
+                    <p className="text-sm text-gray-600">Oncologist, 15+ yrs exp.</p>
+                    <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+                      Book Appointment
+                    </button>
+                  </div>
+
+                  <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img
+                      src={pradeep}
+                      alt="Dr. Vikram Singh"
+                      className="w-28 h-28 rounded-full object-cover mb-3"
+                    />
+                    <h3 className="font-bold text-gray-800">Dr. Vikram Singh</h3>
+                    <p className="text-sm text-gray-600">Orthopedic , 18+ yrs exp.</p>
+                    <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+                      Book Appointment
+                    </button>
+                  </div>
+                  <div className="p-4  rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img
+                      src={pradeep}
+                      alt="Dr. Vikram Singh"
+                      className="w-28 h-28 rounded-full object-cover mb-3"
+                    />
+                    <h3 className="font-bold text-gray-800">Dr. Vikram Singh</h3>
+                    <p className="text-sm text-gray-600">Orthopedic , 18+ yrs exp.</p>
+                    <button className="px-4 mt-4
+                                           py-2 bg-[#2b3d67] text-white text-[13px] rounded-md hover:bg-[#1f2c4d] transition">
+                      Book Appointment
+                    </button>
+                  </div>
+
                 </div>
               </section>
             </AnimatedSection>
 
-            {/* Hospitals Section */}
+
             <AnimatedSection>
               <section>
                 <h2 className="text-3xl font-extrabold text-[#2b3d67] mb-6 text-center">
                   Leading Hospitals for Cosmetic Treatment
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {hospitals.map((hosp, idx) => (
                     <div
                       key={idx}
-                      className="bg-white rounded-xl shadow-lg overflow-hidden group transform transition-all hover:shadow-2xl hover:scale-105"
+                      className="bg-white rounded-xl shadow-lg overflow-hidden  hover:shadow-xl "
                     >
                       <div className="overflow-hidden h-48">
                         <img
@@ -357,11 +600,11 @@ function MedicalCost() {
                         />
                       </div>
                       <div className="p-5">
-                        <h3 className="font-bold text-gray-800 text-lg">
+                        <h3 className="font-bold text-gray-800 ">
                           {hosp.name}
                         </h3>
-
-                        <button className="mt-3 bg-[#17b2aa] text-white px-4 py-2.5 rounded-lg w-full font-bold hover:bg-[#149a93] transition-colors">
+                        <button className="bg-[#17b2aa] px-4 mt-4
+                                           py-2  text-white text-[13px] rounded-md  transition">
                           Contact Hospital
                         </button>
                       </div>
@@ -374,76 +617,159 @@ function MedicalCost() {
             {/* Cost Table Section */}
             <AnimatedSection>
               <div className="p-2">
-                <div className="bg-[#d9efff] p-5 rounded-t-xl">
-                  <h2 className="text-2xl font-bold text-[#0B0757]">
-                    Find Your Treatment Cost
+                <div className="bg-[#d9efff] p-4 rounded-t-xl">
+                  <h2 className="text-xl font-bold text-[#0B0757]">
+                    Cost related to Cosmetic Treatment in India
                   </h2>
                   <p className="text-sm text-gray-700 mt-1">
-                    Use the search bar to instantly filter procedures.
+                    Listing approximate price of cosmetic treatments and related procedures.
+                    Prices may vary depending on the centers and patient condition.
                   </p>
-                  <div className="mt-4 relative">
-                    <input
-                      type="text"
-                      placeholder="Search for a treatment (e.g., Rhinoplasty)"
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg shadow-inner text-gray-800"
-                    />
-                    <Icon
-                      path="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                      className="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
-                    />
-                  </div>
+
                 </div>
-                <div className="overflow-x-auto border rounded-b-xl shadow-md">
+                <div className="overflow-x-auto border rounded-b-xl">
                   <table className="w-full border-collapse text-sm">
-                    <thead className="sticky top-0">
+                    <thead>
                       <tr className="bg-[#0B0757] text-white">
-                        <th className="p-4 text-left font-semibold">
-                          Treatment Name
-                        </th>
-                        <th className="p-4 text-left font-semibold">
-                          Min. Cost
-                        </th>
-                        <th className="p-4 text-left font-semibold">
-                          Max. Cost
-                        </th>
+                        <th className="p-3 text-left">Treatment Name</th>
+                        <th className="p-3 text-left">Min. Cost</th>
+                        <th className="p-3 text-left">Max. Cost</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {filteredTreatments.length > 0 ? (
-                        filteredTreatments.map((item, index) => (
-                          <tr
-                            key={index}
-                            className={`${index % 2 === 0 ? "bg-white" : "bg-blue-50"
-                              } hover:bg-yellow-50`}
-                          >
-                            <td className="p-4 font-medium text-gray-800">
-                              {item.name}
-                            </td>
-                            <td className="p-4 text-gray-600 font-mono">
-                              {item.min}
-                            </td>
-                            <td className="p-4 text-gray-600 font-mono">
-                              {item.max}
-                            </td>
-                          </tr>
-                        ))
-                      ) : (
-                        <tr>
-                          <td
-                            colSpan="3"
-                            className="text-center p-8 font-semibold text-gray-500"
-                          >
-                            No treatments found.
-                          </td>
+                      {treatmentData.map((item, index) => (
+                        <tr
+                          key={index}
+                          className={index % 2 === 0 ? "bg-gray-50" : "bg-[#fffaf2]"}
+                        >
+                          <td className="p-3 font-medium text-gray-800">{item.name}</td>
+                          <td className="p-3">{item.min}</td>
+                          <td className="p-3">{item.max}</td>
                         </tr>
-                      )}
+                      ))}
                     </tbody>
                   </table>
                 </div>
               </div>
             </AnimatedSection>
+            <section id="video-testimonials" className="mb-5">
+              <h2 className="text-2xl font-bold  text-[#2b3d67] my-6">Video Testimonials</h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {testimonials.slice(0, 5).map((video, index) => (
+                  <a
+                    key={index}
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+                  >
+                    {/* Thumbnail with play overlay */}
+                    <div className="relative">
+                      <img
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition">
+                        <span className="text-white text-4xl">▶</span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold text-[#2b3d67] mb-1">
+                        {video.title}
+                      </h3>
+                      <p className="text-sm text-gray-600">{video.description}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </section>
+            {/* Our Services */}
+            <section className="shadow-md p-4 border bg-blue-200">
+              <h2 className="text-xl  font-semibold text-[#2b3d67] mb-3">
+                Our Services for Cosmetic Treatment in India
+              </h2>
+              <p className="text-sm text-gray-600 mb-4">
+                Transparent · Professional · Without Hassles
+              </p>
+              <div className="grid md:grid-cols-4 gap-3 mb-5">
+                {["Book Appointment", "Video Consult", "Cost Estimate", "Support"].map(
+                  (srv, idx) => (
+                    <div
+                      key={idx}
+                      className="px-4 rounded-md
+ py-2 text-white bg-[#2b3d67] font-semibold text-[13pxrounded-md hover:bg-[#1f2c4d] transition"
+                    >
+                      {srv}
+                    </div>
+                  )
+                )}
+              </div>
+              <div className="flex gap-4">
+                <button className="bg-[#2b3d67] text-white px-6 py-2 rounded-md">
+                  Contact Doctor
+                </button>
+              </div>
+            </section>
+
+            {/* Success Rate */}
+            <section className="bg-blue-100 p-5 rounded-lg shadow">
+              <h2 className="text-xl font-semibold text-[#2b3d67] mb-3">Success Rate</h2>
+              <p className="text-gray-700 leading-relaxed">
+                It's essential to have a clear understanding of what will happen before,
+                during, and after the procedure, and what results to expect...
+              </p>
+            </section>
+
+            <section id="faqs" className="mb-10">
+              <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">Frequently Asked Questions</h2>
+              <div className="space-y-2">
+                <details className="p-4 border rounded-lg">
+                  <summary className="font-semibold cursor-pointer">Does Apollo provide international patient support?</summary>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Yes, Apollo has a dedicated international patient department offering visa assistance, translators, and accommodation help.
+                  </p>
+                </details>
+                <details className="p-4 border rounded-lg">
+                  <summary className="font-semibold cursor-pointer">What are the payment options?</summary>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Payments can be made via cash, credit cards, wire transfers, or international insurance partners.
+                  </p>
+                </details>
+                <details className="p-4 border rounded-lg">
+                  <summary className="font-semibold cursor-pointer">How do I book an appointment with a doctor?</summary>
+                  <p className="text-sm text-gray-600 mt-2">
+                    You can use our online booking system or contact our helpline to schedule an appointment with a specialist.
+                  </p>
+                </details>
+                <details className="p-4 border rounded-lg">
+                  <summary className="font-semibold cursor-pointer">What are the payment options?</summary>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Payments can be made via cash, credit cards, wire transfers, or international insurance partners.
+                  </p>
+                </details>
+                <details className="p-4 border rounded-lg">
+                  <summary className="font-semibold cursor-pointer">How do I book an appointment with a doctor?</summary>
+                  <p className="text-sm text-gray-600 mt-2">
+                    You can use our online booking system or contact our helpline to schedule an appointment with a specialist.
+                  </p>
+                </details>
+              </div>
+            </section>
+
+            {/* Free Service Banner */}
+            <section className="bg-[#fff5e1] p-5 rounded-lg flex items-center justify-between shadow">
+              <p className="font-medium pr-5 text-gray-700">
+                ⭐ Our services are FREE and by using our services your hospital bill does
+                not increase!
+              </p>
+              <button className="bg-[#2b3d67] w-48  text-white text-sm px-8 py-2 rounded-md">
+                Submit an Enquiry
+              </button>
+            </section>
           </div>
 
           {/* Right Sidebar (Unchanged) */}
@@ -503,6 +829,61 @@ function MedicalCost() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full mt-16 max-w-7xl mx-auto mb-10 bg-[#f9f9f9] p-6 rounded-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          <div>
+            <h2 className="text-lg font-bold mb-3 text-[#2b3d67]">
+              Piles Treatment in Top Cities
+            </h2>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Bangalore</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Faridabad</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Hyderabad</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Pune</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Chennai</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Ghaziabad</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Mumbai</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Delhi</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Gurgaon</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery in Noida</a></li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h2 className="text-lg font-bold mb-3 text-[#2b3d67]">
+              Piles Surgery Cost in Top Cities
+            </h2>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Bangalore</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Faridabad</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Hyderabad</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Pune</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Chennai</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Ghaziabad</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Mumbai</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Delhi</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Gurgaon</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Surgery cost in Noida</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-lg font-bold mb-3 text-[#2b3d67]">
+              Related Treatments
+            </h2>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-blue-600 hover:underline">• Fissure Surgery</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Fistula Surgery</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Laser Piles Surgery</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Piles Treatment Without Surgery</a></li>
+              <li><a href="#" className="text-blue-600 hover:underline">• Home Remedies for Piles</a></li>
+            </ul>
           </div>
         </div>
       </div>
