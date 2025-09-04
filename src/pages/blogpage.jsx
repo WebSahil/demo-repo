@@ -15,37 +15,37 @@ function BlogPage() {
             name: "Dr. Meera Kapoor",
             specialty: "Cardiologist",
             exp: "15+ yrs exp.",
-            img: natarajan ,
+            img: natarajan,
         },
         {
             name: "Dr. Arjun Sharma",
             specialty: "Orthopedic Surgeon",
             exp: "12+ yrs exp.",
-            img: pradeep ,
+            img: pradeep,
         },
         {
             name: "Dr. Neha Verma",
             specialty: "Dermatologist",
             exp: "10+ yrs exp.",
-            img: suraj ,
+            img: suraj,
         },
         {
             name: "Dr. Rakesh Nair",
             specialty: "Neurologist",
             exp: "18+ yrs exp.",
-            img: pradeep ,
+            img: pradeep,
         },
         {
             name: "Dr. Priya Singh",
             specialty: "Gynecologist",
             exp: "14+ yrs exp.",
-            img: natarajan ,
+            img: natarajan,
         },
         {
             name: "Dr. Sanjay Gupta",
             specialty: "Oncologist",
             exp: "20+ yrs exp.",
-            img: suraj ,
+            img: suraj,
         },
     ];
 
@@ -137,58 +137,61 @@ function BlogPage() {
 
     return (<>
         <div className='flex flex-col  pb-2'>
-            <section className="relative w-full bg-[#e7f3f7]">
-                <div className="max-w-7xl mx-auto px-6 py-16 space-y-5 text-center">
-
+            {/* Hero Section */}
+            <section className="relative pt-6 w-full bg-[#e7f3f7]">
+                <div className="max-w-7xl py-3 mx-auto px-6  text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-[#2b3d67] leading-snug">
                         Welcome to Our <span className="text-[#17b2aa]">Knowledge Hub</span>
                     </h1>
+                </div>
+            </section>
 
-                    <p className="mt-4  text-gray-700 max-w-2xl mx-auto leading-relaxed">
-                        Discover expert insights, guides, and the latest updates on health, wellness, and treatments.
+            <section className="sticky pb-6 top-32 z-30 bg-[#e7f3f7] py-2 shadow-md">
+                <div className="max-w-7xl justify-center mx-auto px-6 flex flex-col md:flex-row items-center gap-4 ">
 
-                    </p>
-
-                    <div className="mt-4 max-w-xl mx-auto flex items-center bg-white border border-gray-300 rounded-full shadow-md overflow-hidden">
-                        <input
-                            type="text"
-                            placeholder="Search articles..."
-                            className="flex-1 px-4 py-2 text-gray-700 focus:outline-none"
-                        />
-                        <button className="bg-[#17b2aa] text-white px-6 py-2 font-semibold">
-                            Search
-                        </button>
-                    </div>
-
-
-                    <div className="mt-5 flex flex-wrap  justify-center gap-3">
-                        {["Wellness", "Ayurveda", "Cosmetic Care", "Patient Stories", "Nutrition"].map((cat, i) => (
+                    <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                        {["Wellness", "Ayurveda", "Patient Stories", "Nutrition",].map((cat, i) => (
                             <span
                                 key={i}
-                                className="px-4 py-2 bg-white rounded-full border border-[#17b2aa] text-[#17b2aa] font-medium hover:bg-[#17b2aa] hover:text-white transition"
+                                className="px-6 py-1.5 bg-white text-sm font-semibold rounded-sm border border-[#17b2aa] text-[#17b2aa] shadow-md hover:bg-[#17b2aa] hover:text-white transition"
                             >
                                 {cat}
                             </span>
                         ))}
+                        <button className="px-6 py-1.5 bg-[#17b2aa] text-white text-sm font-semibold rounded-sm shadow-md hover:bg-[#13938d] transition">
+                            View All
+                        </button>
+
+                    </div>
+
+                    <div className="w-full md:w-1/3 flex items-center bg-white border border-gray-300 rounded-sm shadow-md overflow-hidden">
+                        <input
+                            type="text"
+                            placeholder="Search articles..."
+                            className="flex-1 px-4 py-[6px] text-gray-700 focus:outline-none"
+                        />
+                        <button className="bg-[#17b2aa] text-white px-6 py-[6px] font-semibold">
+                            Search
+                        </button>
                     </div>
                 </div>
             </section>
-            <section className="max-w-7xl mx-auto px-6 pb-12 pt-8">
-                <h2 className="text-2xl md:text-5xl font-bold text-[#2b3d67] mb-6 text-center">
-                    Featured <span className="text-[#17b2aa]">Story</span>
-                </h2>
 
+
+            <section className="max-w-7xl mx-auto px-6 pb-12 pt-8">
                 <div className="grid md:grid-cols-2 gap-8 items-center bg-[#e7f3f7] rounded-2xl shadow-md overflow-hidden">
-                    {/* Image */}
+
                     <img
                         src={blog3}
                         alt="Featured Blog"
                         className="w-full h-full object-cover"
                     />
 
-                    {/* Content */}
                     <div className="p-6 md:p-10">
-                        <h3 className="text-2xl font-semibold text-[#2b3d67] leading-snug">
+                        <h2 className="text-2xl md:text-4xl font-bold text-[#2b3d67] mb-6 text-center">
+                            Featured <span className="text-[#17b2aa]">Story</span>
+                        </h2>
+                        <h3 className="text-2xl font-bold text-[#2b3d67] ">
                             Unlocking the Secrets of Holistic Wellness
                         </h3>
                         <p className="mt-4 text-gray-700 leading-relaxed">
@@ -351,34 +354,34 @@ function BlogPage() {
                 </div>
             </div>
             <section className="bg-[#e7f3f7] py-10 mt-10">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-[#2b3d67] mb-8 text-center">
-          Meet Our Expert Doctors
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-          {doctors.map((doc, index) => (
-            <div
-              key={index}
-              className="bg-white pb-5 rounded-lg shadow-md text-center"
-            >
-              <img
-                src={doc.img}
-                alt={doc.name}
-                className="w-full h-52 mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-lg font-semibold text-[#2b3d67]">
-                {doc.name}
-              </h3>
-              <p className="text-sm text-gray-600">{doc.specialty}</p>
-              <p className="text-xs text-gray-500">{doc.exp}</p>
-              <button className="mt-3 px-4 py-2 bg-[#17b2aa] text-white rounded-md text-sm">
-                Book Appointment
-              </button>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+                <div className="max-w-7xl mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-[#2b3d67] mb-8 text-center">
+                        Meet Our Expert Doctors
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+                        {doctors.map((doc, index) => (
+                            <div
+                                key={index}
+                                className="bg-white pb-5 rounded-lg shadow-md text-center"
+                            >
+                                <img
+                                    src={doc.img}
+                                    alt={doc.name}
+                                    className="w-full h-52 mx-auto mb-4 object-cover"
+                                />
+                                <h3 className="text-lg font-semibold text-[#2b3d67]">
+                                    {doc.name}
+                                </h3>
+                                <p className="text-sm text-gray-600">{doc.specialty}</p>
+                                <p className="text-xs text-gray-500">{doc.exp}</p>
+                                <button className="mt-3 px-5 py-1.5 bg-[#17b2aa] text-white rounded-sm text-sm">
+                                    Book Appointment
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             <div className="flex flex-col 2xl:px-36 lg:flex-row mt-10 justify-center items-center bg-gradient-to-r from-purple-50 to-blue-300 w-full py-4 lg:py-16 lg:px-8">
                 {/* Text Section */}
