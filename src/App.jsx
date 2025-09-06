@@ -6,11 +6,10 @@ import Home from "./pages/home";
 import HospitalData from "./pages/hospitalData";
 import DoctorsData from "./pages/doctorsData";
 import MedicalCost from "./pages/medicalCost";
-
 import Layout from "./components/layout"
 import BlogPage from "./pages/blogpage";
 import ConsultOnline from "./pages/consult";
-import Testimonial from "./pages/Testimonial";
+import Testimonial from "../pages/testimonial";
 
 function App() {
   return (

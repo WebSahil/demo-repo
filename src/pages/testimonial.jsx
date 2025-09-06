@@ -330,35 +330,11 @@ function Testimonial() {
                         ))}
                     </div>
                 </section>
-                {/* Happy Patients Gallery */}
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold text-[#2b3d67] mb-3">
-                        Happy Patients Gallery
-                    </h2>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {[
-                            "https://randomuser.me/api/portraits/men/12.jpg",
-                            "https://randomuser.me/api/portraits/women/19.jpg",
-                            "https://randomuser.me/api/portraits/men/50.jpg",
-                            "https://randomuser.me/api/portraits/women/66.jpg",
-                            "https://randomuser.me/api/portraits/men/23.jpg",
-                            "https://randomuser.me/api/portraits/women/36.jpg",
-                        ].map((img, i) => (
-                            <div key={i} className="overflow-hidden rounded-lg shadow-md">
-                                <img
-                                    src={img}
-                                    alt="Happy patient"
-                                    className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </section>
+
                 <div className="bg-white border mb-10 border-gray-200 rounded-lg shadow-md p-8">
                     <h2 className="text-2xl font-semibold text-[#2b3d67] mb-6 text-center">
                         Share Your Testimonial
                     </h2>
-
                     <form className="space-y-5">
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
@@ -414,6 +390,34 @@ function Testimonial() {
                         </button>
                     </form>
                 </div>
+
+                {/* Success Stories Highlight */}
+                <div className="bg-[#e7f3f7] rounded-lg p-6 mt-10 shadow-md">
+                    <h2 className="text-2xl font-semibold text-[#2b3d67] mb-4">Patient Success Stories</h2>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Over <span className="font-bold text-[#17b2aa]">10,000+ international patients</span> have trusted us for their medical journey.
+                        From life-saving transplants to advanced robotic surgeries, their stories inspire confidence and hope.
+                    </p>
+                    <ul className="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Liver transplant with excellent recovery outcomes</li>
+                        <li>Advanced cardiac care with minimal complications</li>
+                        <li>Orthopedic treatments ensuring faster mobility</li>
+                        <li>Affordable and accessible treatment options for all</li>
+                    </ul>
+                </div>
+
+                {/* Call to Action */}
+                <div className="bg-[#17b2aa] text-white rounded-lg p-8 my-12 text-center shadow-md">
+                    <h2 className="text-2xl font-bold mb-3">Your Story Matters!</h2>
+                    <p className="mb-5">
+                        Every testimonial inspires hope for others who are beginning their medical journey.
+                        Share your experience and help patients make confident choices.
+                    </p>
+                    <button className="bg-white text-[#17b2aa] px-6 py-2 font-semibold rounded-md shadow hover:bg-gray-100 transition">
+                        Submit Your Testimonial
+                    </button>
+                </div>
+
 
 
                 <section className="bg-[#e7f3f7] rounded-lg p-8 text-center shadow-md">
