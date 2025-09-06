@@ -9,11 +9,11 @@ import MedicalCost from "./pages/medicalCost";
 import Layout from "./components/layout"
 import BlogPage from "./pages/blogpage";
 import ConsultOnline from "./pages/consult";
-import Testimonial from "./pages/Testimonial";
+import Testimonial from "./pages/testimonialpage";
 
 
 function App() {
-    return (
+  return (
     <Router>
       <Layout>
         <Routes>
