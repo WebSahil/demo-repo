@@ -1,7 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import HospitalPage from "./pages/hospital";
-import ContactUs from "./pages/ContactUs"; 
+import ContactUs from "./pages/ContactUs";
 import Home from "./pages/home";
 import HospitalData from "./pages/hospitalData";
 import DoctorsData from "./pages/doctorsData";
@@ -10,6 +10,7 @@ import Layout from "./components/layout"
 import BlogPage from "./pages/blogpage";
 import ConsultOnline from "./pages/consult";
 import Testimonial from "./pages/Testimonial";
+
 
 function App() {
   return (
