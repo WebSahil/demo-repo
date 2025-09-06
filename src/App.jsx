@@ -9,12 +9,12 @@ import MedicalCost from "./pages/medicalCost";
 import Layout from "./components/layout"
 import BlogPage from "./pages/blogpage";
 import ConsultOnline from "./pages/consult";
-import Testimonial from "../pages/testimonial";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   return (
     <Router>
-      
+
       <Layout>
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
