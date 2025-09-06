@@ -14,6 +14,7 @@ import Testimonial from "../pages/testimonial";
 function App() {
   return (
     <Router>
+      
       <Layout>
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
