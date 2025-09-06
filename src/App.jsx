@@ -9,6 +9,7 @@ import MedicalCost from "./pages/medicalCost";
 import Layout from "./components/layout"
 import BlogPage from "./pages/blogpage";
 import ConsultOnline from "./pages/consult";
+import Testimonial from "./pages/Testimonial";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/hospital" element={<HospitalPage />} />
+          <Route path="/hospital" element={<Testimonial />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/home" element={<Home />} />
           <Route path="/hospitaldata" element={<HospitalData />} />
